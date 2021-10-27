@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public GameObject popup;
     void Start()
     {
         
@@ -27,4 +30,9 @@ public class UiManager : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+    public void SetActive()
+    {
+        popup.SetActive(true);
+    }
 }
+
