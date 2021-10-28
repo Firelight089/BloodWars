@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour
+public class DamageController : MonoBehaviour
 {
     public GameObject healtBarFull;
     public GameObject popup;
@@ -23,7 +23,6 @@ public class GameController : MonoBehaviour
     void Update()
     {   
     }
-
     public void Attack()
     {
         hBaFuImg.fillAmount -= damage;
@@ -33,18 +32,4 @@ public class GameController : MonoBehaviour
             popup.SetActive(true);
         }
             }
-    public void Replay (string scene)
-    {
-        if (true)
-        {
-            SceneManager.LoadScene(scene);
-        }
-    }
-    public void Train(string scene)
-    {
-        if (true)
-        {
-            SceneManager.LoadScene(scene);
-        }
-    }
 }

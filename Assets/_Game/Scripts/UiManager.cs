@@ -19,13 +19,6 @@ public class UiManager : MonoBehaviour
     {
         
     }
-    public void PrinOurName ()
-    {
-        print("Richard");
-        print("Elena");
-        print("Cole");
-    }
-
     public void ChangeScene (string scene)
     {
         SceneManager.LoadScene(scene);
@@ -33,6 +26,10 @@ public class UiManager : MonoBehaviour
     public void SetActive()
     {
         popup.SetActive(true);
+    }
+    public void Hide()
+    {
+        popup.SetActive(false);
     }
 }
 
