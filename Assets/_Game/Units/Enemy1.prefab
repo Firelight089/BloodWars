@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Dark Ghost
-  unitLevel: 2
+  unitLevel: 25
   damage: 5
-  maxHP: 30
-  currentHP: 30
+  maxHP: 50
+  currentHP: 10

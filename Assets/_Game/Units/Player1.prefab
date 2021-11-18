@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Knight
-  unitLevel: 2
+  unitLevel: 20
   damage: 5
-  maxHP: 30
+  maxHP: 50
   currentHP: 30
