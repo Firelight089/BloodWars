@@ -91,5 +91,7 @@ MonoBehaviour:
   unitName: Knight
   unitLevel: 20
   damage: 5
+  equipment: 0
   maxHP: 50
   currentHP: 30
+  type: Magic

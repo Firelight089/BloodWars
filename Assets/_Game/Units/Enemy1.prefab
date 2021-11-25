@@ -91,5 +91,7 @@ MonoBehaviour:
   unitName: Dark Ghost
   unitLevel: 25
   damage: 5
+  equipment: 0
   maxHP: 50
   currentHP: 10
+  type: Fire

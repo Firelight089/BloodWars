@@ -25,6 +25,8 @@ public class BattleSystem : MonoBehaviour
 
     public GameObject fightingArena;
     public GameObject challenge;
+    public GameObject rematch;
+    public Text rematchText;
 
     public Text dialogueText;
 
@@ -73,7 +75,7 @@ public class BattleSystem : MonoBehaviour
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.text = "Success!";
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         //Check if enemy is dead
         if (isDead)
@@ -96,9 +98,10 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EnemyTurn()
     {
-        dialogueText.text = enemyUnit.unitName + "attacks!";
+        dialogueText.text = enemyUnit.unitName + " attacks!";
+        BattleBoost();
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         playerUnit.TakeDamage(enemyUnit.damage);
 
@@ -153,12 +156,158 @@ public class BattleSystem : MonoBehaviour
     {
         if (state == BattleState.WON)
         {
-            dialogueText.text = "Enemy defeated!";
+            dialogueText.text = "Enemy defeated! ";
+            fightingArena.SetActive(false);
+            rematch.SetActive(true);
+            rematchText.text = dialogueText.text + " Fight again?";
         }
         else if (state == BattleState.LOST)
         {
-            dialogueText.text = "You were defeated.";
+            dialogueText.text = "You were defeated. ";
+            fightingArena.SetActive(false);
+            rematch.SetActive(true);
+            rematchText.text = dialogueText.text + " Fight again?";
         }
     }
+    public void Rematch()
+    {
+        fightingArena.SetActive(true);
+        rematch.SetActive(false);
+        state = BattleState.START;
+        StartCoroutine(SetupBattle());
+    }
 
+    void BattleBoost()
+    {
+        string enemyType;
+        enemyType = enemyUnit.type;
+        // Water enemy
+                if (enemyUnit.type == "Water" && playerUnit.type == "Water")
+                {
+                    dialogueText.text = "No element advantage";
+                }
+                if (enemyUnit.type == "Water" && playerUnit.type == "Fire")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Water advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Water" && playerUnit.type == "Magic")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Water advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Water" && playerUnit.type == "Earth")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Earth advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Water" && playerUnit.type == "Wind")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Wind advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+        // Fire enemy
+
+                if (enemyUnit.type == "Fire" && playerUnit.type == "Fire")
+                {
+                    dialogueText.text = "No element advantage";
+                }
+                if (enemyUnit.type == "Fire" && playerUnit.type == "Magic")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Fire advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Fire" && playerUnit.type == "Earth")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Fire advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Fire" && playerUnit.type == "Wind")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Wind advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Fire" && playerUnit.type == "Water")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Water advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+        // Magic enemy
+                if (enemyUnit.type == "Magic" && playerUnit.type == "Magic")
+                {
+                    dialogueText.text = "No element advantage";
+                }
+                if (enemyUnit.type == "Magic" && playerUnit.type == "Earth")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Magic advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Magic" && playerUnit.type == "Wind")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Magic advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Magic" && playerUnit.type == "Water")
+                {
+                dialogueText.text = playerUnit.unitName + " has Water advange";
+                playerUnit.damage = (playerUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Magic" && playerUnit.type == "Fire")
+                {
+                dialogueText.text = playerUnit.unitName + " has Fire advange";
+                playerUnit.damage = (playerUnit.damage + 50);
+                }
+        // Earth enemy
+
+                if (enemyUnit.type == "Earth" && playerUnit.type == "Earth")
+                {
+                dialogueText.text = "No element advantage";
+                }
+                if (enemyUnit.type == "Earth" && playerUnit.type == "Wind")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Earth advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Earth" && playerUnit.type == "Water")
+                {
+                dialogueText.text = enemyUnit.unitName + " has Earth advange";
+                enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Earth" && playerUnit.type == "Fire")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Fire advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Earth" && playerUnit.type == "Magic")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Magic advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+        // Wind enemy
+
+                if (enemyUnit.type == "Wind" && playerUnit.type == "Wind")
+                {
+                    dialogueText.text = "No element advantage";
+                }
+                if (enemyUnit.type == "Wind" && playerUnit.type == "Water")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Wind advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Wind" && playerUnit.type == "Fire")
+                {
+                    dialogueText.text = enemyUnit.unitName + " has Wind advange";
+                    enemyUnit.damage = (enemyUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Wind" && playerUnit.type == "Magic")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Magic advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+                if (enemyUnit.type == "Wind" && playerUnit.type == "Earth")
+                {
+                    dialogueText.text = playerUnit.unitName + " has Earth advange";
+                    playerUnit.damage = (playerUnit.damage + 50);
+                }
+    }
 }
