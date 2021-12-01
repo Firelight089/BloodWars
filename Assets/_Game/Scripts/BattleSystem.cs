@@ -105,13 +105,22 @@ public class BattleSystem : MonoBehaviour
 
         playerUnit.TakeDamage(enemyUnit.damage);
 
-        bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
+        bool isDead = false;
+
+        if (playerUnit.currentHP <= 0)
+        {
+            isDead = true;
+        }
+        else
+        {
+            isDead = false;
+        }
 
         playerHUD.SetHP(playerUnit.currentHP);
 
         yield return new WaitForSeconds(1f);
 
-        if (isDead)
+        if (isDead == true)
         {
             //end battle
             state = BattleState.LOST;
@@ -179,6 +188,7 @@ public class BattleSystem : MonoBehaviour
 
     void BattleBoost()
     {
+       
         string enemyType;
         enemyType = enemyUnit.type;
         // Water enemy
@@ -216,6 +226,7 @@ public class BattleSystem : MonoBehaviour
                 {
                     dialogueText.text = enemyUnit.unitName + " has Fire advange";
                     enemyUnit.damage = (enemyUnit.damage + 50);
+                    Debug.Log(enemyUnit.damage);
                 }
                 if (enemyUnit.type == "Fire" && playerUnit.type == "Earth")
                 {
