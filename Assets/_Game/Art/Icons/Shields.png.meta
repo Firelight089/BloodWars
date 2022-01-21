@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: e7ddd38eddf0bb84a91cea70cdf8d41e
+guid: 9be91dfc1663fde4e8cc5f792171e1a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 512373470810768163
-    second: Helmets1_0
+      213: 6400552702600982961
+    second: Shields_0
   - first:
-      213: 2205749401722450666
-    second: Helmets1_1
+      213: -2068574112114660309
+    second: Shields_1
   - first:
-      213: -4779185340170938388
-    second: Helmets1_2
+      213: 8471521539899323818
+    second: Shields_2
   - first:
-      213: -9213974250439396294
-    second: Helmets1_3
+      213: -1725029743354566250
+    second: Shields_3
   - first:
-      213: -5060862979246186909
-    second: Helmets1_4
+      213: 9084595409292152472
+    second: Shields_4
   - first:
-      213: -8419249262804640165
-    second: Helmets1_5
+      213: 6157291957462711827
+    second: Shields_5
   - first:
-      213: -6292725229735731686
-    second: Helmets1_6
+      213: -691648189638129965
+    second: Shields_6
   - first:
-      213: 9221748384540044231
-    second: Helmets1_7
+      213: 7586038000047475234
+    second: Shields_7
   - first:
-      213: 3212975804712485589
-    second: Helmets1_8
-  - first:
-      213: -2780898017760631712
-    second: Helmets1_9
+      213: 2622457356334492233
+    second: Shields_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Helmets1_0
+      name: Shields_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 111
-        width: 101
-        height: 96
+        x: 56
+        y: 720
+        width: 286
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 323820005f05c1700800000000000000
-      internalID: 512373470810768163
+      spriteID: 1b1b2bc75c453d850800000000000000
+      internalID: 6400552702600982961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_1
+      name: Shields_1
       rect:
         serializedVersion: 2
-        x: 183
-        y: 116
-        width: 68
-        height: 102
+        x: 382
+        y: 700
+        width: 240
+        height: 308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae27231f4656c9e10800000000000000
-      internalID: 2205749401722450666
+      spriteID: b2c26d70ec2fa43e0800000000000000
+      internalID: -2068574112114660309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_2
+      name: Shields_2
       rect:
         serializedVersion: 2
-        x: 119
-        y: 109
-        width: 54
-        height: 92
+        x: 685
+        y: 712
+        width: 285
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce75b5b114cecadb0800000000000000
-      internalID: -4779185340170938388
+      spriteID: aa5f4ccd4f3e09570800000000000000
+      internalID: 8471521539899323818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_3
+      name: Shields_3
       rect:
         serializedVersion: 2
-        x: 263
-        y: 113
-        width: 61
-        height: 105
+        x: 71
+        y: 362
+        width: 244
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34b6f8ac33612080800000000000000
-      internalID: -9213974250439396294
+      spriteID: 6992e5886967f08e0800000000000000
+      internalID: -1725029743354566250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_4
+      name: Shields_4
       rect:
         serializedVersion: 2
-        x: 337
-        y: 114
-        width: 60
-        height: 103
+        x: 376
+        y: 348
+        width: 247
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e1b191fe334c9b0800000000000000
-      internalID: -5060862979246186909
+      spriteID: 89ec00b7467f21e70800000000000000
+      internalID: 9084595409292152472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_5
+      name: Shields_5
       rect:
         serializedVersion: 2
-        x: 28
-        y: 11
-        width: 55
-        height: 82
+        x: 685
+        y: 353
+        width: 285
+        height: 309
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e5f0f0761d82b80800000000000000
-      internalID: -8419249262804640165
+      spriteID: 31e3fee9968137550800000000000000
+      internalID: 6157291957462711827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_6
+      name: Shields_6
       rect:
         serializedVersion: 2
-        x: 99
-        y: 5
-        width: 72
-        height: 92
+        x: 51
+        y: 21
+        width: 283
+        height: 306
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e967c6ebfbba8a0800000000000000
-      internalID: -6292725229735731686
+      spriteID: 3d6c313d2a5c666f0800000000000000
+      internalID: -691648189638129965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_7
+      name: Shields_7
       rect:
         serializedVersion: 2
-        x: 179
-        y: 0
-        width: 72
-        height: 105
+        x: 375
+        y: 36
+        width: 277
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cbaa8cfb4b3aff70800000000000000
-      internalID: 9221748384540044231
+      spriteID: 22ac1755e55074960800000000000000
+      internalID: 7586038000047475234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Helmets1_8
+      name: Shields_8
       rect:
         serializedVersion: 2
-        x: 253
-        y: 4
-        width: 81
-        height: 92
+        x: 723
+        y: 17
+        width: 213
+        height: 317
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,29 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d200d7a878c69c20800000000000000
-      internalID: 3212975804712485589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Helmets1_9
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 5
-        width: 69
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0642ac69cf34869d0800000000000000
-      internalID: -2780898017760631712
+      spriteID: 94a6dea3217d46420800000000000000
+      internalID: 2622457356334492233
       vertices: []
       indices: 
       edges: []
