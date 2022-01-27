@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IPointerClickHandler
 {
     // Start is called before the first frame update
     public int ID;
@@ -13,31 +14,33 @@ public class Item : MonoBehaviour
     new public bool pickedUp;
     public bool equipped;
 
+    public Inventory inventory;
+
     public void Update()
     {
-        if (equipped)
+        //if (equipped)
+        //{
+        //    //perform weapon act here
+        //}
+    }
+
+    public void EquipItem()
+    {
+        if (type == "Helmet")
         {
-            //perform weapon act here
+
         }
     }
-    public void ItemUsage()
+
+    public void OnPointerClick(PointerEventData eventData)
     {
-    //weapon
-    if (type == "Weapon")
+        if (type == "Helmet" && pickedUp == false)
         {
-        equipped = true;
+            pickedUp = true;
+            Item itemPickedUp = gameObject.GetComponent<Item>();
+            //Item item = itemPickedUp.GetComponent<Item>();
+            inventory.AddItem(gameObject, itemPickedUp.ID, itemPickedUp.type, itemPickedUp.description, itemPickedUp.icon);
+            Destroy(gameObject);
         }
-
-    //health
-
-    //Accesories
-
-    //Healment
-
-    //Vest
-
-    //Boots
-
-    //Gauntlets
     }
 }

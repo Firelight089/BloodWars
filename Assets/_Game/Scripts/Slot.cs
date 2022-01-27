@@ -14,18 +14,25 @@ public class Slot : MonoBehaviour
 
     public Transform slotIconGO;
     new public Sprite icon;
+    public Inventory helmetInventory;
 
     private void Start()
     {
-        slotIconGO = transform.GetChild(0);
+        //slotIconGO = transform.GetChild(0);
+        int slotsNum = helmetInventory.allSlots;
     }
-    public void UpdateSlot()
+    public void UpdateSlot(GameObject itemObject, int itemID, string itemType, string itemDescription, Sprite itemIcon)
     {
-        slotIconGO.GetComponent<Image>().sprite = icon;
+        // slotIconGO.GetComponent<Image>().sprite = icon;
+        item = itemObject;
+        ID = itemID;
+        type = itemType;
+        description = itemDescription;
+        icon = itemIcon;
     }
 
-    public void UsedItem()
-    {
+    //public void UsedItem()
+    //{
 
-    }
+    //}
 }

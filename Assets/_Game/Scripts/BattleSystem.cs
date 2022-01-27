@@ -191,6 +191,7 @@ public class BattleSystem : MonoBehaviour
        
         string enemyType;
         enemyType = enemyUnit.type;
+        enemyUnit.damage = enemyPrefab.GetComponent<Unit>().damage;
         // Water enemy
                 if (enemyUnit.type == "Water" && playerUnit.type == "Water")
                 {

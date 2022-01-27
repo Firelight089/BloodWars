@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -11,24 +12,24 @@ public class Inventory : MonoBehaviour
 
     //Inventory slots #
 
-    private int allSlots;
+    public int allSlots;
     private int enabledSlots;
-    private GameObject[] slot;
+    public GameObject[] slot;
 
     public GameObject slotHolder;
-
-    private void Start()
+    int inventoryIndex = 0;
+    private void Awake()
     {
-        allSlots = 12;
+        allSlots = 5;
         slot = new GameObject[allSlots];
-        for (int i = 0; i < allSlots; i++)
-        {
-            slot[i] = slotHolder.transform.GetChild(i).gameObject;
-            if (slot[i].GetComponent<Slot>().item = null); //check slots to see if they are empty
-            {
-                slot[i].GetComponent<Slot>().empty = true;
-            }
-        }
+        //for (int i = 0; i < allSlots; i++)
+        //{
+        //    //slot[i] = slotHolder.transform.GetChild(i).gameObject;
+        //    if (slot[i].GetComponent<Slot>().item = null); //check slots to see if they are empty
+        //    {
+        //        slot[i].GetComponent<Slot>().empty = true;
+        //    }
+        //}
     }
 
 
@@ -63,29 +64,55 @@ public class Inventory : MonoBehaviour
     
 
     //Add item to inventory
-    void AddItem(GameObject itemObject, int itemID, string itemType, string itemDescription, Sprite itemIcon)
+    public void AddItem(GameObject itemObject, int itemID, string itemType, string itemDescription, Sprite itemIcon)
     {
-        for (int i = 0; i < allSlots; i++)
+        //for (int i = 0; i < allSlots; i++)
+        //{
+        //    if(slot [i].GetComponent<Slot>().empty)
+        //    {
+        //        //add item to slot
+        //        itemObject.GetComponent<Item>().pickedUp = true;
+
+        //        slot[i].GetComponent<Slot>().item = itemObject;
+        //        slot[i].GetComponent<Slot>().icon = itemIcon;
+        //        slot[i].GetComponent<Slot>().type = itemType;
+        //        slot[i].GetComponent<Slot>().ID = itemID;
+        //        slot[i].GetComponent<Slot>().description = itemDescription;
+
+        //        itemObject.transform.parent = slot[i].transform; //move the GO to the slot
+        //        itemObject.SetActive(false); //disable until used.
+
+        //        slot[i].GetComponent<Slot>().UpdateSlot();
+        //        slot[i].GetComponent<Slot>().empty = false;
+        //    }
+        //    return;
+        //}
+        
+        if (inventoryIndex >= slot.Length)
         {
-            if(slot [i].GetComponent<Slot>().empty)
+            GameObject[] temp = slot;
+            slot = new GameObject[inventoryIndex + 1];
+            for (int i = 0; i < temp.Length; ++i)
             {
-                //add item to slot
-                itemObject.GetComponent<Item>().pickedUp = true;
-
-                slot[i].GetComponent<Slot>().item = itemObject;
-                slot[i].GetComponent<Slot>().icon = itemIcon;
-                slot[i].GetComponent<Slot>().type = itemType;
-                slot[i].GetComponent<Slot>().ID = itemID;
-                slot[i].GetComponent<Slot>().description = itemDescription;
-
-                itemObject.transform.parent = slot[i].transform; //move the GO to the slot
-                itemObject.SetActive(false); //disable until used.
-
-                slot[i].GetComponent<Slot>().UpdateSlot();
-                slot[i].GetComponent<Slot>().empty = false;
+                slot[i] = temp[i];
             }
-            return;
+            
         }
+
+        if (slot[inventoryIndex] == null)
+        {
+            slot[inventoryIndex] = itemObject;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Item>().ID = itemID;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Item>().type = itemType;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Item>().description = itemDescription;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Item>().icon = itemIcon;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Item>().pickedUp = true;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Item>().inventory = this;
+            slotHolder.transform.GetChild(inventoryIndex).GetComponent<Image>().sprite = itemIcon;
+        }
+        inventoryIndex++;
+
     }
 
+    
 }
