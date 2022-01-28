@@ -51,16 +51,16 @@ public class Inventory : MonoBehaviour
     }
 
     //Pickup Item  * for physical contact, needs to be changed to menu based
-    private void ItemCollected (Collider other)
-    {
-        if(other.tag == "Item")
-        {
-            GameObject itemPickedUp = other.gameObject;
-            Item item = itemPickedUp.GetComponent<Item>();
+    //private void OnMouseDown (Collider other)
+    //{
+    //    if(other.tag == "Item")
+    //    {
+    //        GameObject itemPickedUp = other.gameObject;
+    //        Item item = itemPickedUp.GetComponent<Item>();
 
-            AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
-        }
-    }
+    //        AddItem(itemPickedUp, item.ID, item.type, item.description, item.icon);
+    //    }
+    //}
     
 
     //Add item to inventory

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Item : MonoBehaviour, IPointerClickHandler
+public class Item : MonoBehaviour//, IPointerClickHandler
 {
     // Start is called before the first frame update
     public int ID;
@@ -32,7 +32,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void ItemButtonClicked()
     {
         if (type == "Helmet" && pickedUp == false)
         {
@@ -43,4 +43,17 @@ public class Item : MonoBehaviour, IPointerClickHandler
             Destroy(gameObject);
         }
     }
+
+    /*
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (type == "Helmet" && pickedUp == false)
+        {
+            pickedUp = true;
+            Item itemPickedUp = gameObject.GetComponent<Item>();
+            //Item item = itemPickedUp.GetComponent<Item>();
+            inventory.AddItem(gameObject, itemPickedUp.ID, itemPickedUp.type, itemPickedUp.description, itemPickedUp.icon);
+            Destroy(gameObject);
+        }
+    }*/
 }
