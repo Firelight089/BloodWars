@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject popUp;
+
     //public GameObject helmets;
     //public GameObject accessories;
     //public GameObject vests;

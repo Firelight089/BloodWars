@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
     int inventoryIndex = 0;
     private void Awake()
     {
-        allSlots = 5;
+        allSlots = 12;
         slot = new GameObject[allSlots];
         //for (int i = 0; i < allSlots; i++)
         //{
