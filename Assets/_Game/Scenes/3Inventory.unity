@@ -739,10 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 2
-  type: Helmet
-  description: Bla bla ble
-  icon: {fileID: 2205749401722450666, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -1273,10 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 4
-  type: Helmet
-  description: Bla bla
-  icon: {fileID: -9213974250439396294, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -2569,7 +2563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &451356833
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2602,10 +2596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -2798,10 +2789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 3
-  type: Helmet
-  description: Bla bla ble
-  icon: {fileID: -4779185340170938388, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -3993,10 +3981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 6
-  type: Helmet
-  description: Bla bla ble
-  icon: {fileID: -8419249262804640165, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -4448,7 +4433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &686271412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4481,10 +4466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -5003,7 +4985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &805398931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5036,10 +5018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -6154,7 +6133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &975554804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6187,10 +6166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -6440,6 +6416,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977388158}
   m_CullTransparentMesh: 0
+--- !u!1 &1021129155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021129157}
+  - component: {fileID: 1021129156}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1021129156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021129155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1904571997ede428ae52afc1e82d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 11400000, guid: 162112018957ec648ae2a0eab9aee1c2, type: 2}
+  - {fileID: 11400000, guid: c7680cf632684c54a8b033e00ffb5102, type: 2}
+--- !u!4 &1021129157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021129155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034327883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,7 +6786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1168963253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6797,10 +6819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -7012,10 +7031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 1
-  type: Helmet
-  description: Bla bla
-  icon: {fileID: 512373470810768163, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -8872,7 +8888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1509386520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8905,10 +8921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -9703,7 +9716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1640328296
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9736,10 +9749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -10378,7 +10388,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00030517578}
-  m_SizeDelta: {x: -135, y: -430}
+  m_SizeDelta: {x: -135, y: -700}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1751913198
 MonoBehaviour:
@@ -10584,7 +10594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1762954035
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10617,10 +10627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  type: 
-  description: 
-  icon: {fileID: 0}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -11729,10 +11736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec5116414cd66f4c8c1b5992f5851bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 5
-  type: Helmet
-  description: Bla bla ble
-  icon: {fileID: -5060862979246186909, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  equipment: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -12127,6 +12131,7 @@ GameObject:
   - component: {fileID: 2082379224}
   - component: {fileID: 2082379225}
   - component: {fileID: 2082379226}
+  - component: {fileID: 2082379227}
   m_Layer: 5
   m_Name: HelmetsInventory
   m_TagString: Untagged
@@ -12185,3 +12190,21 @@ MonoBehaviour:
   allSlots: 0
   slot: []
   slotHolder: {fileID: 1751913196}
+--- !u!114 &2082379227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082379223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab2cb750ca22284fbe1ce44e02affa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUp: {fileID: 369124542}
+  activeInventory: {fileID: 2082379223}
+  slotHolder: {fileID: 1751913196}
+  inventorySlotPrefab: {fileID: 1586943132758514828, guid: 610d7fed472b09946b3527fded6b3a88,
+    type: 3}
+  equipmentFilter: 0

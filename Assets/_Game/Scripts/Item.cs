@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Item : MonoBehaviour//, IPointerClickHandler
+public class Item : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int ID;
-    public string type;
-    public string description;
-    public Sprite icon;
+    public Equipment equipment;
 
     new public bool pickedUp;
     public bool equipped;
@@ -22,11 +19,12 @@ public class Item : MonoBehaviour//, IPointerClickHandler
         //{
         //    //perform weapon act here
         //}
+
     }
 
     public void EquipItem()
     {
-        if (type == "Helmet")
+        if (equipment.type == EquipmentType.Armor)
         {
 
         }
@@ -34,26 +32,18 @@ public class Item : MonoBehaviour//, IPointerClickHandler
 
     public void ItemButtonClicked()
     {
-        if (type == "Helmet" && pickedUp == false)
+
+        if (/*equipment.type == EquipmentType.Armor &&*/ pickedUp == false)
         {
             pickedUp = true;
             Item itemPickedUp = gameObject.GetComponent<Item>();
             //Item item = itemPickedUp.GetComponent<Item>();
-            inventory.AddItem(gameObject, itemPickedUp.ID, itemPickedUp.type, itemPickedUp.description, itemPickedUp.icon);
+            //inventory.AddItem(gameObject, itemPickedUp.ID, itemPickedUp.type, itemPickedUp.description, itemPickedUp.icon);
+
+            InventoryManager.Instance.AddItemToInventory(equipment);
+
             Destroy(gameObject);
         }
     }
 
-    /*
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (type == "Helmet" && pickedUp == false)
-        {
-            pickedUp = true;
-            Item itemPickedUp = gameObject.GetComponent<Item>();
-            //Item item = itemPickedUp.GetComponent<Item>();
-            inventory.AddItem(gameObject, itemPickedUp.ID, itemPickedUp.type, itemPickedUp.description, itemPickedUp.icon);
-            Destroy(gameObject);
-        }
-    }*/
 }

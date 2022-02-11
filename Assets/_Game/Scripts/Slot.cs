@@ -13,13 +13,17 @@ public class Slot : MonoBehaviour
     public bool empty;
 
     public Transform slotIconGO;
-    new public Sprite icon;
+    public Image icon;
     public Inventory helmetInventory;
+
+    public Equipment equipment;
 
     private void Start()
     {
         //slotIconGO = transform.GetChild(0);
-        int slotsNum = helmetInventory.allSlots;
+        //int slotsNum = helmetInventory.allSlots;
+
+        UpdateSlot(equipment);
     }
     public void UpdateSlot(GameObject itemObject, int itemID, string itemType, string itemDescription, Sprite itemIcon)
     {
@@ -28,7 +32,13 @@ public class Slot : MonoBehaviour
         ID = itemID;
         type = itemType;
         description = itemDescription;
-        icon = itemIcon;
+        icon.sprite = itemIcon;
+    }
+
+    public void UpdateSlot(Equipment equip)
+    {
+        equipment = equip;
+        icon.sprite = equipment.icon;
     }
 
     //public void UsedItem()
