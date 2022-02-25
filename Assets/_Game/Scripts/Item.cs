@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
     // Start is called before the first frame update
     public Equipment equipment;
+    public Image img;
 
     new public bool pickedUp;
     public bool equipped;
 
     public Inventory inventory;
+
+    private void Start()
+    {
+        
+    }
 
     public void Update()
     {

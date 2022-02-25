@@ -375,12 +375,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -452,6 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -645,6 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -795,6 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -980,6 +983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -1318,6 +1322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -1818,6 +1823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -2148,12 +2154,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 450
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -2286,6 +2292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 11400000, guid: c7680cf632684c54a8b033e00ffb5102, type: 2}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -2934,6 +2941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 11400000, guid: 162112018957ec648ae2a0eab9aee1c2, type: 2}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -3077,12 +3085,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 260
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -3154,6 +3162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -3334,12 +3343,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -3461,6 +3470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -3726,7 +3736,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -84.32233, y: -906.6}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &772446819
 MonoBehaviour:
@@ -4022,6 +4032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -4843,6 +4854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -5146,12 +5158,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -5228,6 +5240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -6155,6 +6168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -6293,6 +6307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -6731,6 +6746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -6944,6 +6960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -7157,6 +7174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -7295,6 +7313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -7475,12 +7494,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -7539,7 +7558,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00030517578}
-  m_SizeDelta: {x: -84.32233, y: -1086.6}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1751913198
 MonoBehaviour:
@@ -8029,6 +8048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -8206,7 +8226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1885677397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8595,6 +8615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 2082379226}
@@ -8838,7 +8859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2082379224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8943,6 +8964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipment: {fileID: 0}
+  img: {fileID: 0}
   pickedUp: 0
   equipped: 0
   inventory: {fileID: 0}
@@ -9230,12 +9252,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}

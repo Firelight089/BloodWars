@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
+  m_Name: Frog-mouthHelmet
+  m_EditorClassIdentifier: 
+  equipmentName: Frog-mouth Helmet
+  type: 0
+  description: Offers better protection from lances that splinter after impact with
+    the rival's body armour.
+  icon: {fileID: 3212975804712485589, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  AttackPoints: 230
+  DefensePoints: 250
+  ExperiencePoints: 300
+  HealthPoints: 0
+  Cost: 0

@@ -7,8 +7,15 @@ public class Equipment : ScriptableObject
 {
     public string equipmentName;
     public EquipmentType type;
+    public Element element;
     public string description;
     public Sprite icon;
+    public int AttackPoints;
+    public int DefensePoints;
+    public int ExperiencePoints;
+    public int HealthPoints;
+    public float Cost;
+
 }
 
 public enum EquipmentType

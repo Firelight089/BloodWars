@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
-  m_Name: RedHelmet
+  m_Name: AventailHelmet
   m_EditorClassIdentifier: 
-  equipmentName: Red Helmet
+  equipmentName: Aventail Helmet
   type: 0
-  description: It's red, with your opponent's blood!
-  icon: {fileID: -867696522777932473, guid: 41b4eef8d891e2a479680b6b4fed4600, type: 3}
+  description: Flexible curtain of mail attached to the skull of a helmet that extends
+    to cover the throat, neck and shoulders.
+  icon: {fileID: -8419249262804640165, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  AttackPoints: 0
+  DefensePoints: 120
+  ExperiencePoints: 130
+  HealthPoints: 0
+  Cost: 2.6

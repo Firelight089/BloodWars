@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
+  m_Name: BarbuteHelmet
+  m_EditorClassIdentifier: 
+  equipmentName: Barbute Helmet
+  type: 0
+  description: It's red, with your opponent's blood!
+  icon: {fileID: 9221748384540044231, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
+  AttackPoints: 0
+  DefensePoints: 20
+  ExperiencePoints: 25
+  HealthPoints: 0
+  Cost: 0

@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
-  m_Name: RoundShield
+  m_Name: Bandit Knife
   m_EditorClassIdentifier: 
-  equipmentName: Round Shield
-  type: 1
-  description: It's a circle!
-  icon: {fileID: 6400552702600982961, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
+  equipmentName: Bandit's Knife
+  type: 3
+  element: 0
+  description: A knife of bandits
+  icon: {fileID: 6123003023063038561, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
+  AttackPoints: 225
+  DefensePoints: 80
+  ExperiencePoints: 40
+  HealthPoints: 0
+  Cost: 8.4

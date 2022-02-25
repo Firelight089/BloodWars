@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
+  m_Name: Kite Shield
+  m_EditorClassIdentifier: 
+  equipmentName: Kite Shield
+  type: 1
+  description: Triangle shaped shield with a sharp end for stabbing, provides less
+    protection to the arm andchest
+  icon: {fileID: 2622457356334492233, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
+  AttackPoints: 135
+  DefensePoints: 30
+  ExperiencePoints: 10
+  HealthPoints: 0
+  Cost: 6
