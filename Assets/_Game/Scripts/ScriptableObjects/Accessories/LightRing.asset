@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
-  m_Name: BarbuteHelmet
+  m_Name: LightRing
   m_EditorClassIdentifier: 
-  equipmentName: Barbute Helmet
-  type: 0
+  equipmentName: Fire Dagger
+  type: 2
   element: 0
-  description: It's red, with your opponent's blood!
-  icon: {fileID: -2780898017760631712, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
-  AttackPoints: 0
-  DefensePoints: 20
-  ExperiencePoints: 25
+  description: A fire resistant sword with a scorching blade.
+  icon: {fileID: 4451057695867506739, guid: 95fda9e7a6c6f6e44b450418931973da, type: 3}
+  AttackPoints: 40
+  DefensePoints: 0
+  ExperiencePoints: 5
   HealthPoints: 0
-  Cost: 0
+  Cost: 10

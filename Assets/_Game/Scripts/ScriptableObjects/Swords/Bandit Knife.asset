@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Bandit's Knife
   type: 3
-  element: 0
+  element: 3
   description: A knife of bandits
   icon: {fileID: 6123003023063038561, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
-  AttackPoints: 225
-  DefensePoints: 80
-  ExperiencePoints: 40
+  AttackPoints: 20
+  DefensePoints: 0
+  ExperiencePoints: 2
   HealthPoints: 0
-  Cost: 8.4
+  Cost: 2

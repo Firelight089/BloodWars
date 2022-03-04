@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NasalHelmet
   m_EditorClassIdentifier: 
   equipmentName: Nasal Helmet
-  type: 0
+  type: 1
+  element: 0
   description: Helmet projecting bar covering the nose and thus protecting the centre
     of the face
   icon: {fileID: 9221748384540044231, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
-  m_Name: BarbuteHelmet
+  m_Name: Bastard's Sword
   m_EditorClassIdentifier: 
-  equipmentName: Barbute Helmet
-  type: 0
-  element: 0
-  description: It's red, with your opponent's blood!
-  icon: {fileID: -2780898017760631712, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
-  AttackPoints: 0
-  DefensePoints: 20
-  ExperiencePoints: 25
+  equipmentName: Bastard's Sword
+  type: 3
+  element: 4
+  description: A long heavy  sword
+  icon: {fileID: 1340437603416802206, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
+  AttackPoints: 40
+  DefensePoints: 0
+  ExperiencePoints: 10
   HealthPoints: 0
-  Cost: 0
+  Cost: 3

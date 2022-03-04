@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Metal Heater Shield
   type: 1
+  element: 0
   description: Resistant and managable shield, provides as much movement as a kite
     shield, with more protection
-  icon: {fileID: 6157291957462711827, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
+  icon: {fileID: -691648189638129965, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
   AttackPoints: 225
   DefensePoints: 80
   ExperiencePoints: 20

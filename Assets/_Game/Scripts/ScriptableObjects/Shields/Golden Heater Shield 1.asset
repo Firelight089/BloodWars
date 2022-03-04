@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Golden Heater Shield
   type: 1
+  element: 0
   description: Light and manageable shield, can be used either mounted or on foot
-  icon: {fileID: 6157291957462711827, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
+  icon: {fileID: 9084595409292152472, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
   AttackPoints: 225
   DefensePoints: 80
   ExperiencePoints: 40

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Close Helmet
   type: 0
+  element: 0
   description: Fully enclosing helmet with a pivoting visor and integral bevor.
-  icon: {fileID: 5973168979162390250, guid: 41b4eef8d891e2a479680b6b4fed4600, type: 3}
+  icon: {fileID: -9213974250439396294, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
   AttackPoints: 98
   DefensePoints: 150
   ExperiencePoints: 100
