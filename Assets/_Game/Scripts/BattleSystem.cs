@@ -30,6 +30,8 @@ public class BattleSystem : MonoBehaviour
 
     public Text dialogueText;
 
+    public GameObject[] buttons;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -142,9 +144,24 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(PlayerAttack());
     }
 
-    IEnumerator PlayerHeal()
+    IEnumerator PlayerHeal(GameObject[] buttons)
     {
-        playerUnit.Heal(5);
+        if (buttons[0].name.Equals("+5HP"))
+        {
+            playerUnit.Heal(5);
+        }
+        if (buttons[1].name.Equals("+25HP"))
+        {
+            playerUnit.Heal(25);
+        }
+        if (buttons[2].name.Equals("+50HP"))
+        {
+            playerUnit.Heal(50);
+        }
+        if (buttons[3].name.Equals("+100HP"))
+        {
+            playerUnit.Heal(100);
+        }
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "Health restored!";
@@ -159,7 +176,7 @@ public class BattleSystem : MonoBehaviour
         if (state != BattleState.PLAYERTURN)
             return;
 
-        StartCoroutine(PlayerHeal());
+        StartCoroutine(PlayerHeal(buttons));
     }
     void EndBattle()
     {
