@@ -18,19 +18,19 @@ public class UiManager : MonoBehaviour
     //public GameObject boots;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    public void ChangeScene (string scene)
+    public void ChangeScene(string scene)
     {
         SceneManager.LoadScene(scene);
     }
-    public void ActivatePopUp ()
+    public void ActivatePopUp()
     {
         popUp.SetActive(true);
     }

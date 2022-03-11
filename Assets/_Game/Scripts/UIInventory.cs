@@ -10,7 +10,7 @@ public class UIInventory : MonoBehaviour
     public GameObject activeInventory;
 
     //Inventory slots #
-    
+
 
     public GameObject slotHolder;
     public GameObject inventorySlotPrefab;
@@ -21,13 +21,13 @@ public class UIInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnEnable()
@@ -35,22 +35,22 @@ public class UIInventory : MonoBehaviour
         spawnedObjects = new List<GameObject>();
         Debug.Log("INitalize inventory");
         List<Equipment> equipments = InventoryManager.Instance.inventory;
-        for(int i = 0; i < equipments.Count; i++)
+        for (int i = 0; i < equipments.Count; i++)
         {
-            if(equipments[i].type == equipmentFilter)
+            if (equipments[i].type == equipmentFilter)
             {
                 GameObject g = Instantiate(inventorySlotPrefab, slotHolder.transform);
                 InventorySlot slotScript = g.GetComponent<InventorySlot>();
                 slotScript.UpdateSlot(equipments[i]);
                 spawnedObjects.Add(g);
             }
-            
+
         }
     }
 
     private void OnDisable()
-    { 
-        for (int i = spawnedObjects.Count-1; i >= 0; i--)
+    {
+        for (int i = spawnedObjects.Count - 1; i >= 0; i--)
         {
             Destroy(spawnedObjects[i]);
         }

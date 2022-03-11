@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
     int inventoryIndex = 0;
     private void Awake()
     {
-        
+
         slot = new GameObject[allSlots];
         //for (int i = 0; i < allSlots; i++)
         //{
@@ -48,12 +48,12 @@ public class Inventory : MonoBehaviour
     public void DeactivateInventory()
     {
         activeInventory.SetActive(false);
-    }  
+    }
 
     //Add item to inventory
     public void AddItem(GameObject itemObject, int itemID, string itemType, string itemDescription, Sprite itemIcon)
     {
-        
+
         if (inventoryIndex >= slot.Length)
         {
             GameObject[] temp = slot;
@@ -62,7 +62,7 @@ public class Inventory : MonoBehaviour
             {
                 slot[i] = temp[i];
             }
-            
+
         }
 
         if (slot[inventoryIndex] == null)
@@ -80,5 +80,5 @@ public class Inventory : MonoBehaviour
 
     }
 
-    
+
 }

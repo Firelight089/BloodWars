@@ -14,7 +14,7 @@ public class HeartClicker : MonoBehaviour
     {
 
         anim = heartClicker.GetComponent<Animator>();
-        
+
     }
 
     // Update is called once per frame
@@ -22,11 +22,11 @@ public class HeartClicker : MonoBehaviour
     {
 
     }
-public void Click()
-{
-            anim.Play("HeartClickerAnimation");
-}
-public void ChangeScene(string scene)
+    public void Click()
+    {
+        anim.Play("HeartClickerAnimation");
+    }
+    public void ChangeScene(string scene)
     {
         SceneManager.LoadScene(scene);
     }

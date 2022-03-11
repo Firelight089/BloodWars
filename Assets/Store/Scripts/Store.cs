@@ -50,9 +50,9 @@ Button[] buttons;
     [HideInInspector]
     public
         int[] prices;
-    string 
+    string
         have;
-    public string[] 
+    public string[]
         data = { "Coins", "PlayerIndex", "isRandom", "Items" };
     //////////////////
     [Header("Items")]
@@ -76,9 +76,9 @@ Button[] buttons;
         hide = true;
     //Instance
 
-#endregion
+    #endregion
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-#region Initialize Store
+    #region Initialize Store
     private void Awake()
     {
         GetRefer();
@@ -93,7 +93,7 @@ Button[] buttons;
         container = GameObject.FindGameObjectWithTag("storeContainer");
         coinsImage = buttonsImage[0].sprite;
     }
-#region Corountines
+    #region Corountines
     public IEnumerator WaitPlayer()
     {
         yield return new WaitUntil(() => player != null);
@@ -102,7 +102,7 @@ Button[] buttons;
         RandomizePlayer();
 
     }
-#endregion
+    #endregion
     void CheckSave()
     {
         index = PlayerPrefs.GetInt(data[1]);
@@ -115,7 +115,7 @@ Button[] buttons;
         else
         {
             have = icon[0].name;
-            PlayerPrefs.SetString(data[3],have);
+            PlayerPrefs.SetString(data[3], have);
         }
     }
     void Initialize()
@@ -206,9 +206,9 @@ Button[] buttons;
     //        oldIndex = i;
     //    }
     //}
-#endregion
+    #endregion
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-#region Buy/Set Itens
+    #region Buy/Set Itens
     public void Buy(int i)
     {
         int x = i + startedButtonIndex;
@@ -334,7 +334,7 @@ Button[] buttons;
     {
         player = p;
     }
-#endregion
+    #endregion
 }
 #endregion
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -10,7 +10,7 @@ public class InventorySlot : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
 

@@ -46,8 +46,8 @@ public class Score : MonoBehaviour
             r3Anim.Play("Reward3Animation");
         }
         else if (counter == 20)
-            {
-                popup.SetActive(true);
-            }
+        {
+            popup.SetActive(true);
+        }
     }
 }

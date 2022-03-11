@@ -91,7 +91,10 @@ MonoBehaviour:
   unitName: Red Knight
   unitLevel: 15
   damage: 3
+  defense: 200
   equipment: 0
+  experience: 0
+  coins: 0
   maxHP: 300
   currentHP: 300
-  type: Fire
+  type: Water

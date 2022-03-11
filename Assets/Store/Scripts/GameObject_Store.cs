@@ -10,7 +10,7 @@ public class GameObject_Store : Store
     public override void SetPlayer(int i)
     {
         GameObject oldPlayer = player;
-        player = Instantiate(items[i],oldPlayer.transform.position,oldPlayer.transform.rotation);
+        player = Instantiate(items[i], oldPlayer.transform.position, oldPlayer.transform.rotation);
         Destroy(oldPlayer);
     }
 

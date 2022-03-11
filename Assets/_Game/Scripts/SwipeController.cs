@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class SwipeController : MonoBehaviour, IDragHandler, IEndDragHandler{
-    
+public class SwipeController : MonoBehaviour, IDragHandler, IEndDragHandler
+{
+
     private Vector3 panelLocation;
     public float percentThreshold = 0.2f;
     public float easing = 0.5f;
     void Start()
-    { 
+    {
         panelLocation = transform.position;
     }
 
@@ -20,11 +21,11 @@ public class SwipeController : MonoBehaviour, IDragHandler, IEndDragHandler{
 
     public void OnEndDrag(PointerEventData data)
     {
-        float percentage =(data.pressPosition.x - data.position.x) / Screen.width;
-        if (Mathf.Abs (percentage) >= percentThreshold)
+        float percentage = (data.pressPosition.x - data.position.x) / Screen.width;
+        if (Mathf.Abs(percentage) >= percentThreshold)
         {
             Vector3 newLocation = panelLocation;
-            if (percentage > 0 )
+            if (percentage > 0)
             {
                 newLocation += new Vector3(-Screen.width, 0, 0);
             }
@@ -44,7 +45,7 @@ public class SwipeController : MonoBehaviour, IDragHandler, IEndDragHandler{
     IEnumerator SmoothMove(Vector3 starpos, Vector3 endpos, float seconds)
     {
         float t = 0f;
-        while (t<= 1.0)
+        while (t <= 1.0)
         {
             t += Time.deltaTime / seconds;
             transform.position = Vector3.Lerp(starpos, endpos, Mathf.SmoothStep(0f, 1f, t));

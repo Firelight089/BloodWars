@@ -15,7 +15,7 @@ public class InventoryManager : MonoBehaviour
             Instance = this;
             //inventory = new List<Equipment>();
         }
-            
+
         else
             Destroy(this.gameObject);
     }
@@ -23,7 +23,7 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void AddItemToInventory(Equipment item)

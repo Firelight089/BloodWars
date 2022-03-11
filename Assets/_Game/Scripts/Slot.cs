@@ -9,7 +9,7 @@ public class Slot : MonoBehaviour
 
     public int ID;
     public string type;
-    public string description; 
+    public string description;
     public bool empty;
 
     public Transform slotIconGO;
