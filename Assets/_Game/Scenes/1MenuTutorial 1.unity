@@ -2535,7 +2535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Fallen
+  m_Text: Select your character
 --- !u!222 &1067014980
 CanvasRenderer:
   m_ObjectHideFlags: 0

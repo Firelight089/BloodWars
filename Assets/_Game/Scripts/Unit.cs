@@ -10,6 +10,7 @@ public class Unit : MonoBehaviour
     public string unitName;
     public int unitLevel;
 
+    public bool Female;
     public int damage;
     public int defense;
     public int equipment;
