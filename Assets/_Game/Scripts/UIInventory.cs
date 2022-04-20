@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
-    //Inventory PopUp objs and variable
-    //public bool inventoryEnabled;
     public GameObject popUp;
     public GameObject activeInventory;
 
-    //Inventory slots #
-
-
+    
     public GameObject slotHolder;
     public GameObject inventorySlotPrefab;
     private List<GameObject> spawnedObjects;
@@ -33,7 +29,7 @@ public class UIInventory : MonoBehaviour
     private void OnEnable()
     {
         spawnedObjects = new List<GameObject>();
-        Debug.Log("INitalize inventory");
+        Debug.Log("Initalize inventory");
         List<Equipment> equipments = InventoryManager.Instance.inventory;
         for (int i = 0; i < equipments.Count; i++)
         {

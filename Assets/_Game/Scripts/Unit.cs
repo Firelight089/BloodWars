@@ -38,6 +38,19 @@ public class Unit : MonoBehaviour
             currentHP = maxHP;
 
     }
+    public enum UnitType
+    {
+        Magic,
+        Fire,
+        Earth,
+        Water,
+        Wind
+    }
+    public enum UnitGender
+    {
+        Male,   
+        Female
+    }
 
 
 }
