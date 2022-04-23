@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour
 {
     public string unitName;
     public int unitLevel;
+    public Sprite icon;
 
     public bool Female;
     public int damage;

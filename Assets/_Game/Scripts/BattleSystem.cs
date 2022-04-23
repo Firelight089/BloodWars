@@ -60,7 +60,8 @@ public class BattleSystem : MonoBehaviour
         enemy.transform.localPosition = Vector3.zero;
         enemyUnit = enemy.GetComponent<Unit>();
 
-        playerHUD.SetHUD(playerUnit);
+        playerHUD.SetPlayerHUD(playerUnit);
+        
         enemyHUD.SetHUD(enemyUnit);
 
         yield return new WaitForSeconds(0f);
@@ -154,14 +155,17 @@ public class BattleSystem : MonoBehaviour
         if (buttons[1].name.Equals("+25HP"))
         {
             playerUnit.Heal(25);
+            playerHUD.SetCoins(-50);
         }
         if (buttons[2].name.Equals("+50HP"))
         {
             playerUnit.Heal(50);
+            playerHUD.SetCoins(-100);
         }
         if (buttons[3].name.Equals("+100HP"))
         {
             playerUnit.Heal(100);
+            playerHUD.SetCoins(-200);
         }
 
         playerHUD.SetHP(playerUnit.currentHP);
