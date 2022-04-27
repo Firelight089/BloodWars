@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Magic Knight
   unitLevel: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ff5f4e0fdac954a4fb328471e6e89795, type: 3}
   Female: 1
   damage: 0
   defense: 0
@@ -100,7 +100,8 @@ MonoBehaviour:
   coins: 8000
   maxHP: 0
   currentHP: 0
-  type: Magic
+  unitElement: 4
+  unitGender: 0
 --- !u!114 &-2456478281673792339
 MonoBehaviour:
   m_ObjectHideFlags: 0

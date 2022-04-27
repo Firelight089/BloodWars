@@ -100,7 +100,8 @@ MonoBehaviour:
   coins: 0
   maxHP: 0
   currentHP: 0
-  type: Wind
+  unitElement: 2
+  unitGender: 0
 --- !u!114 &-445599587050948359
 MonoBehaviour:
   m_ObjectHideFlags: 0

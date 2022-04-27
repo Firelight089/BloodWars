@@ -9,18 +9,13 @@ public class UnitSlot : MonoBehaviour
     public Unit unit;
     private void Start()
     {
-        UpdateSlot(unit);
+        UpdateCharacterSlot(unit);
     }
 
-    public void UpdateSlot(Unit character)
+    public void UpdateCharacterSlot(Unit character)
     {
         unit = character;
         icon.sprite = unit.icon;
-    }
-
-    public void ShopSlotButtonPressed()
-    {
-
     }
 }
 

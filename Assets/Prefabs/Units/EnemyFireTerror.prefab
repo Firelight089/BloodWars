@@ -100,7 +100,8 @@ MonoBehaviour:
   coins: 0
   maxHP: 0
   currentHP: 0
-  type: Fire
+  unitElement: 0
+  unitGender: 1
 --- !u!114 &-4684356468385694649
 MonoBehaviour:
   m_ObjectHideFlags: 0

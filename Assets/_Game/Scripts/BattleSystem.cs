@@ -146,23 +146,23 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(PlayerAttack());
     }
 
-    IEnumerator PlayerHeal(GameObject[] buttons)
+    IEnumerator PlayerHeal(int id)
     {
-        if (buttons[0].name.Equals("+5HP"))
+        if (id == 0)
         {
             playerUnit.Heal(5);
         }
-        if (buttons[1].name.Equals("+25HP"))
+        if (id == 1)
         {
             playerUnit.Heal(25);
             playerHUD.SetCoins(-50);
         }
-        if (buttons[2].name.Equals("+50HP"))
+        if (id == 2)
         {
             playerUnit.Heal(50);
             playerHUD.SetCoins(-100);
         }
-        if (buttons[3].name.Equals("+100HP"))
+        if (id == 3)
         {
             playerUnit.Heal(100);
             playerHUD.SetCoins(-200);
@@ -176,12 +176,12 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
     }
-    public void OnHealButton()
+    public void OnHealButton(int id)
     {
         if (state != BattleState.PLAYERTURN)
             return;
 
-        StartCoroutine(PlayerHeal(buttons));
+        StartCoroutine(PlayerHeal(id));
     }
     void EndBattle()
     {
@@ -211,134 +211,134 @@ public class BattleSystem : MonoBehaviour
     void BattleBoost()
     {
 
-        string enemyType;
-        enemyType = enemyUnit.type;
+        Element enemyType;
+        enemyType = enemyUnit.unitElement;
         enemyUnit.damage = enemyPrefab.GetComponent<Unit>().damage;
         // Water enemy
-        if (enemyUnit.type == "Water" && playerUnit.type == "Water")
+        if (enemyUnit.unitElement == Element.WATER && playerUnit.unitElement == Element.WATER)
         {
             dialogueText.text = "No element advantage";
         }
-        if (enemyUnit.type == "Water" && playerUnit.type == "Fire")
+        if (enemyUnit.unitElement == Element.WATER && playerUnit.unitElement == Element.FIRE)
         {
             dialogueText.text = enemyUnit.unitName + " has Water advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Water" && playerUnit.type == "Magic")
+        if (enemyUnit.unitElement == Element.WATER && playerUnit.unitElement == Element.MAGIC)
         {
             dialogueText.text = enemyUnit.unitName + " has Water advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Water" && playerUnit.type == "Earth")
+        if (enemyUnit.unitElement == Element.WATER && playerUnit.unitElement == Element.EARTH)
         {
             dialogueText.text = playerUnit.unitName + " has Earth advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
-        if (enemyUnit.type == "Water" && playerUnit.type == "Wind")
+        if (enemyUnit.unitElement == Element.WATER && playerUnit.unitElement == Element.WIND)
         {
             dialogueText.text = playerUnit.unitName + " has Wind advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
         // Fire enemy
 
-        if (enemyUnit.type == "Fire" && playerUnit.type == "Fire")
+        if (enemyUnit.unitElement == Element.FIRE && playerUnit.unitElement == Element.FIRE)
         {
             dialogueText.text = "No element advantage";
         }
-        if (enemyUnit.type == "Fire" && playerUnit.type == "Magic")
+        if (enemyUnit.unitElement == Element.FIRE && playerUnit.unitElement == Element.MAGIC)
         {
             dialogueText.text = enemyUnit.unitName + " has Fire advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
             Debug.Log(enemyUnit.damage);
         }
-        if (enemyUnit.type == "Fire" && playerUnit.type == "Earth")
+        if (enemyUnit.unitElement == Element.FIRE && playerUnit.unitElement == Element.EARTH)
         {
             dialogueText.text = enemyUnit.unitName + " has Fire advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Fire" && playerUnit.type == "Wind")
+        if (enemyUnit.unitElement == Element.FIRE && playerUnit.unitElement == Element.WIND)
         {
             dialogueText.text = playerUnit.unitName + " has Wind advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
-        if (enemyUnit.type == "Fire" && playerUnit.type == "Water")
+        if (enemyUnit.unitElement == Element.FIRE && playerUnit.unitElement == Element.WATER)
         {
             dialogueText.text = playerUnit.unitName + " has Water advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
         // Magic enemy
-        if (enemyUnit.type == "Magic" && playerUnit.type == "Magic")
+        if (enemyUnit.unitElement == Element.MAGIC && playerUnit.unitElement == Element.MAGIC)
         {
             dialogueText.text = "No element advantage";
         }
-        if (enemyUnit.type == "Magic" && playerUnit.type == "Earth")
+        if (enemyUnit.unitElement == Element.MAGIC && playerUnit.unitElement == Element.EARTH)
         {
             dialogueText.text = enemyUnit.unitName + " has Magic advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Magic" && playerUnit.type == "Wind")
+        if (enemyUnit.unitElement == Element.MAGIC && playerUnit.unitElement == Element.WIND)
         {
             dialogueText.text = enemyUnit.unitName + " has Magic advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Magic" && playerUnit.type == "Water")
+        if (enemyUnit.unitElement == Element.MAGIC && playerUnit.unitElement == Element.WATER)
         {
             dialogueText.text = playerUnit.unitName + " has Water advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
-        if (enemyUnit.type == "Magic" && playerUnit.type == "Fire")
+        if (enemyUnit.unitElement == Element.MAGIC && playerUnit.unitElement == Element.FIRE)
         {
             dialogueText.text = playerUnit.unitName + " has Fire advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
         // Earth enemy
 
-        if (enemyUnit.type == "Earth" && playerUnit.type == "Earth")
+        if (enemyUnit.unitElement == Element.EARTH && playerUnit.unitElement == Element.EARTH)
         {
             dialogueText.text = "No element advantage";
         }
-        if (enemyUnit.type == "Earth" && playerUnit.type == "Wind")
+        if (enemyUnit.unitElement == Element.EARTH && playerUnit.unitElement == Element.WIND)
         {
             dialogueText.text = enemyUnit.unitName + " has Earth advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Earth" && playerUnit.type == "Water")
+        if (enemyUnit.unitElement == Element.EARTH && playerUnit.unitElement == Element.WATER)
         {
             dialogueText.text = enemyUnit.unitName + " has Earth advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Earth" && playerUnit.type == "Fire")
+        if (enemyUnit.unitElement == Element.EARTH && playerUnit.unitElement == Element.FIRE)
         {
             dialogueText.text = playerUnit.unitName + " has Fire advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
-        if (enemyUnit.type == "Earth" && playerUnit.type == "Magic")
+        if (enemyUnit.unitElement == Element.EARTH && playerUnit.unitElement == Element.MAGIC)
         {
             dialogueText.text = playerUnit.unitName + " has Magic advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
         // Wind enemy
 
-        if (enemyUnit.type == "Wind" && playerUnit.type == "Wind")
+        if (enemyUnit.unitElement == Element.WIND && playerUnit.unitElement == Element.WIND)
         {
             dialogueText.text = "No element advantage";
         }
-        if (enemyUnit.type == "Wind" && playerUnit.type == "Water")
+        if (enemyUnit.unitElement == Element.WIND && playerUnit.unitElement == Element.WATER)
         {
             dialogueText.text = enemyUnit.unitName + " has Wind advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Wind" && playerUnit.type == "Fire")
+        if (enemyUnit.unitElement == Element.WIND && playerUnit.unitElement == Element.FIRE)
         {
             dialogueText.text = enemyUnit.unitName + " has Wind advange";
             enemyUnit.damage = (enemyUnit.damage + 50);
         }
-        if (enemyUnit.type == "Wind" && playerUnit.type == "Magic")
+        if (enemyUnit.unitElement == Element.WIND && playerUnit.unitElement == Element.MAGIC)
         {
             dialogueText.text = playerUnit.unitName + " has Magic advange";
             playerUnit.damage = (playerUnit.damage + 50);
         }
-        if (enemyUnit.type == "Wind" && playerUnit.type == "Earth")
+        if (enemyUnit.unitElement == Element.WIND && playerUnit.unitElement == Element.EARTH)
         {
             dialogueText.text = playerUnit.unitName + " has Earth advange";
             playerUnit.damage = (playerUnit.damage + 50);

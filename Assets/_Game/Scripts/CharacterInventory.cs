@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIInventory : MonoBehaviour
+public class CharacterInventory : MonoBehaviour
 {
-    public GameObject popUp;
     public GameObject activeInventory;
-
-    
     public GameObject slotHolder;
-    public GameObject inventorySlotPrefab;
+    public GameObject unitSlotPrefab;
     private List<GameObject> spawnedObjects;
 
-    public EquipmentType equipmentFilter;
+    public UnitGender characterGenderFilter;
+    public Element characterElementFilter;
 
     // Start is called before the first frame update
     void Start()
@@ -29,15 +27,15 @@ public class UIInventory : MonoBehaviour
     private void OnEnable()
     {
         spawnedObjects = new List<GameObject>();
-        Debug.Log("Initalize inventory");
-        List<Equipment> equipments = InventoryManager.Instance.inventory;
-        for (int i = 0; i < equipments.Count; i++)
+        Debug.Log("Initalize character inventory");
+        List<Unit> units = CharacterListManager.Instance.characterList;
+        for (int i = 0; i < units.Count; i++)
         {
-            if (equipments[i].type == equipmentFilter)
+            if (units[i].unitElement == characterElementFilter)
             {
-                GameObject g = Instantiate(inventorySlotPrefab, slotHolder.transform);
-                InventorySlot slotScript = g.GetComponent<InventorySlot>();
-                slotScript.UpdateSlot(equipments[i]);
+                GameObject g = Instantiate(unitSlotPrefab, slotHolder.transform);
+                UnitSlot slotScript = g.GetComponent<UnitSlot>();
+                slotScript.UpdateCharacterSlot(units[i]);
                 spawnedObjects.Add(g);
             }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public enum Element { FIRE, WATER, WIND, EARTH, MAGIC }
+public enum UnitGender { FEMALE, MALE }
 
 public class Unit : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class Unit : MonoBehaviour
 
     public int maxHP;
     public int currentHP;
-    public string type;
+    
+    public Element unitElement;
+    public UnitGender unitGender;
 
     public bool TakeDamage(int dmg)
     {
@@ -39,19 +42,4 @@ public class Unit : MonoBehaviour
             currentHP = maxHP;
 
     }
-    public enum UnitType
-    {
-        Magic,
-        Fire,
-        Earth,
-        Water,
-        Wind
-    }
-    public enum UnitGender
-    {
-        Male,   
-        Female
-    }
-
-
 }
