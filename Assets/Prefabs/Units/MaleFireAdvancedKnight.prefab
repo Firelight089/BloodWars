@@ -91,16 +91,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Red Knight
-  unitLevel: 15
+  unitLevel: 25
   icon: {fileID: 2287269159388459783, guid: 277ed18f06ec8ad4f8e1a857fb339c3c, type: 3}
   Female: 0
-  damage: 3
-  defense: 200
+  damage: 80
+  defense: 50
   equipment: 0
-  experience: 0
+  experience: 300
   coins: 8000
-  maxHP: 300
-  currentHP: 300
+  maxHP: 800
+  currentHP: 800
   unitElement: 0
   unitGender: 1
 --- !u!114 &-2980468284234365909
