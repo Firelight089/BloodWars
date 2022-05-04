@@ -16,6 +16,8 @@ public class CharacterListManager : MonoBehaviour
     public Toggle magicToggle;
     public Toggle earthToggle;
 
+    public Unit playerUnit;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class CharacterListManager : MonoBehaviour
         {
             Instance = this;
             //inventory = new List<Equipment>();
+            playerUnit = new Unit();
+            DontDestroyOnLoad(this.gameObject);
         }
 
         else
@@ -55,6 +59,33 @@ public class CharacterListManager : MonoBehaviour
             filterList[i].gameObject.SetActive(true);
         }
 
-        Debug.Log(filterList.Count);
+        //Debug.Log(filterList.Count);
+    }
+
+    public void SavePlayerInfo(Unit character)
+    {
+        //Unit unit = new Unit();
+
+        this.playerUnit = character;
+        
+
+        DontDestroyOnLoad(character.gameObject);
+
+
+        //this.playerUnit.coins = character.coins;
+        //this.playerUnit.unitName = character.unitName;
+        //this.playerUnit.unitLevel = character.unitLevel;
+        //this.playerUnit.icon = character.icon;
+        //this.playerUnit.damage = character.damage;
+        //this.playerUnit.defense = character.defense;
+        //this.playerUnit.equipment = character.equipment;
+        //this.playerUnit.experience = character.experience;
+        //this.playerUnit.maxHP = character.maxHP;
+        //this.playerUnit.currentHP = character.currentHP;
+        //this.playerUnit.unitElement = character.unitElement;
+        //this.playerUnit.unitGender = character.unitGender;
+
+        //character = character.GetComponent<Unit>();
+        Debug.Log("The selected Knight is" + this.playerUnit.unitName);
     }
 }

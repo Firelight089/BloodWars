@@ -27,7 +27,7 @@ public class CharacterInventory : MonoBehaviour
     private void OnEnable()
     {
         spawnedObjects = new List<GameObject>();
-        Debug.Log("Initalize character inventory");
+        //Debug.Log("Initalize character inventory");
         List<Unit> units = CharacterListManager.Instance.characterList;
         for (int i = 0; i < units.Count; i++)
         {

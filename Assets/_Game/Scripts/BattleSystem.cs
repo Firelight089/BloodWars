@@ -10,6 +10,7 @@ public class BattleSystem : MonoBehaviour
 {
 
     public GameObject playerPrefab;
+    public Image playerImage;
     public GameObject enemyPrefab;
 
     public Transform playerStation;
@@ -32,9 +33,14 @@ public class BattleSystem : MonoBehaviour
 
     public GameObject[] buttons;
 
+    public CharacterListManager character;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+        CharacterListManager.Instance.playerUnit = playerUnit;
     }
 
     public void ChallengeAccepted()
@@ -52,9 +58,17 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SetupBattle()
     {
-        GameObject player = Instantiate(playerPrefab, playerStation);
-        player.transform.localPosition = Vector3.zero;
-        playerUnit = player.GetComponent<Unit>();
+        if(CharacterListManager.Instance == null)
+        {
+            GameObject player = Instantiate(playerPrefab, playerStation);
+            player.transform.localPosition = Vector3.zero;
+            playerUnit = player.GetComponent<Unit>();
+        }
+        else
+        {
+            playerUnit = CharacterListManager.Instance.playerUnit;
+        }
+
 
         GameObject enemy = Instantiate(enemyPrefab, enemyStation);
         enemy.transform.localPosition = Vector3.zero;

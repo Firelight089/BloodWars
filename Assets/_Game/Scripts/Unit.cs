@@ -40,6 +40,5 @@ public class Unit : MonoBehaviour
         currentHP += amount;
         if (currentHP > maxHP)
             currentHP = maxHP;
-
     }
 }

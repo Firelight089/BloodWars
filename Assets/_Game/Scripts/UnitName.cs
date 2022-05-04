@@ -8,7 +8,6 @@ public class UnitName : MonoBehaviour
     public string knightName;
 
     public Text inputText;
-
     public static UnitName unitNameInstance;
 
     // Start is called before the first frame update

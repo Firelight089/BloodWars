@@ -38,5 +38,9 @@ public class UiManager : MonoBehaviour
     {
         popUp.SetActive(false);
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
 
