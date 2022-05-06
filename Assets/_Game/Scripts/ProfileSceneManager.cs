@@ -9,17 +9,28 @@ public class ProfileSceneManager : MonoBehaviour
 {
     [SerializeField]
     Text character_name;
-    public Sprite character_image;
+    [SerializeField]
+    Sprite character_image;
+
+    public Image unitImage;
 
         
     void Awake()
     {
         character_name.text = GameObject.Find("PlayerNameInfo_NonDestructable").GetComponent<UnitName>().knightName;
-        character_image = GameObject.Find("Square").GetComponent<CharacterListManager>().playerUnit.icon;
+        character_image = CharacterListManager.playerUnit.icon;//GameObject.Find("CharacterListManager").GetComponent<CharacterListManager>().playerUnit.icon;
+        CharacterListManager g = GameObject.Find("CharacterListManager").GetComponent<CharacterListManager>();
+        GameObject go = GameObject.Find("Player HUD");
+        go.GetComponent<BattleHUD>().SetPlayerHUD(CharacterListManager.playerUnit);//SetPlayerHUD(g.playerUnit);
     }
 
     public void ChangeScene(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    void Start()
+    {
+        unitImage.sprite = character_image;
     }
 }

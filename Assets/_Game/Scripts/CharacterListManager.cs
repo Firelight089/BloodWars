@@ -16,7 +16,8 @@ public class CharacterListManager : MonoBehaviour
     public Toggle magicToggle;
     public Toggle earthToggle;
 
-    public Unit playerUnit;
+    [SerializeField]
+    public static Unit playerUnit;
     
     // Start is called before the first frame update
     void Start()
@@ -25,12 +26,15 @@ public class CharacterListManager : MonoBehaviour
         {
             Instance = this;
             //inventory = new List<Equipment>();
-            playerUnit = new Unit();
+            //playerUnit = new Unit();
             DontDestroyOnLoad(this.gameObject);
+
         }
 
         else
             Destroy(this.gameObject);
+
+
     }
 
     // Update is called once per frame
@@ -66,7 +70,7 @@ public class CharacterListManager : MonoBehaviour
     {
         //Unit unit = new Unit();
 
-        this.playerUnit = character;
+        playerUnit = character;
         
 
         DontDestroyOnLoad(character.gameObject);
@@ -86,6 +90,6 @@ public class CharacterListManager : MonoBehaviour
         //this.playerUnit.unitGender = character.unitGender;
 
         //character = character.GetComponent<Unit>();
-        Debug.Log("The selected Knight is" + this.playerUnit.unitName);
+        Debug.Log("The selected Knight is" + playerUnit.unitName);
     }
 }

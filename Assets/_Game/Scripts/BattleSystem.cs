@@ -8,12 +8,13 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {
-
     public GameObject playerPrefab;
-    public Image playerImage;
+    [SerializeField]
+    Image playerImage;
     public GameObject enemyPrefab;
 
-    public Transform playerStation;
+    public GameObject playerStation;
+    public Transform playerStationSpawn;
     public Transform enemyStation;
 
     Unit playerUnit;
@@ -33,14 +34,11 @@ public class BattleSystem : MonoBehaviour
 
     public GameObject[] buttons;
 
-    public CharacterListManager character;
-
-
 
     // Start is called before the first frame update
     void Start()
     {
-        CharacterListManager.Instance.playerUnit = playerUnit;
+        //playerPrefab = CharacterListManager.playerUnit.gameObject;
     }
 
     public void ChallengeAccepted()
@@ -60,13 +58,15 @@ public class BattleSystem : MonoBehaviour
     {
         if(CharacterListManager.Instance == null)
         {
-            GameObject player = Instantiate(playerPrefab, playerStation);
+            GameObject player = Instantiate(playerPrefab, playerStationSpawn);
             player.transform.localPosition = Vector3.zero;
             playerUnit = player.GetComponent<Unit>();
         }
         else
         {
-            playerUnit = CharacterListManager.Instance.playerUnit;
+            playerUnit = CharacterListManager.playerUnit;
+            playerStation.gameObject.transform.Find("PlayerImage").gameObject.GetComponentInChildren<Image>().enabled = true;
+            playerStation.gameObject.transform.Find("PlayerImage").gameObject.GetComponentInChildren<Image>().sprite = playerUnit.icon;
         }
 
 
