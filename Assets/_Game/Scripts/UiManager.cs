@@ -6,25 +6,22 @@ using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
+    public static bool gameIsPaused = false;
+
     // Start is called before the first frame update
     public GameObject popUp;
 
-    //public GameObject helmets;
-    //public GameObject accessories;
-    //public GameObject vests;
-    //public GameObject shields;
-    //public GameObject gauntlets;
-    //public GameObject weapons;
-    //public GameObject boots;
     void Start()
     {
-
+        if (gameIsPaused == true)
+        {
+            PauseGame();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
     public void ChangeScene(string scene)
     {
@@ -42,5 +39,23 @@ public class UiManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public void PauseGame()
+    {
+        if (!gameIsPaused)
+        {
+            Time.timeScale = 0f;
+            gameIsPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            gameIsPaused = false;
+        }
+    }
+    public void PauseGameFromDeath()
+    {
+        Time.timeScale = 0.0f;
+    }
+
 }
 

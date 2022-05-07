@@ -10,14 +10,14 @@ public class Item : MonoBehaviour
     public Equipment equipment;
     public Image img;
 
-    new public bool pickedUp;
+    public bool pickedUp;
     public bool equipped;
 
     public Inventory inventory;
 
     private void Start()
     {
-
+        
     }
 
     public void Update()

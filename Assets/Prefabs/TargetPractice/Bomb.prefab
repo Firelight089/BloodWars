@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 50304679778352010}
   - component: {fileID: 61864270083351086}
   - component: {fileID: 114972685208905472}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425581338009288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.008, y: 0.1703, z: 90}
-  m_LocalScale: {x: 0.42279, y: 0.42279, z: 0.42279}
+  m_LocalPosition: {x: 0.7863, y: 0.432, z: 90}
+  m_LocalScale: {x: 0.29159826, y: 0.28056344, z: 0.42279}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,9 +72,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 658047423
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1689557253113959251, guid: 9951ac44ef78b274c8ff6030d2167972,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

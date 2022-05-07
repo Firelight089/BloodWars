@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 50000013385405578}
   - component: {fileID: 61000011034815620}
   - component: {fileID: 114793767185679938}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Dummies
   m_TagString: Fruit
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012780925384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.54, y: -3.08, z: 90}
-  m_LocalScale: {x: 0.729614, y: 0.729614, z: 0.14592281}
+  m_LocalPosition: {x: -10.9839, y: -2.5961, z: 90}
+  m_LocalScale: {x: 0.47738644, y: 0.44739932, z: 0.14592281}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

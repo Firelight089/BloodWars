@@ -7,7 +7,6 @@ public class ScrollingText : MonoBehaviour
 {
     public GameObject popUp;
     [SerializeField] float speed = 100.0f;
-    [SerializeField] float textPosBegin = -1324.0f;
     [SerializeField] float textPosEnd = 1330.0f; //or 1500.f to move to the very top.
 
     RectTransform scrollingText;

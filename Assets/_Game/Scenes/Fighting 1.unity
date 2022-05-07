@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7907712092a43924196b486e196d8c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healtBarFull: {fileID: 0}
+  healthBarFull: {fileID: 0}
   popup: {fileID: 369124542}
   damage: 0.1
 --- !u!4 &652737442
@@ -1745,8 +1745,8 @@ Canvas:
   m_GameObject: {fileID: 2054245226}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1400393122}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

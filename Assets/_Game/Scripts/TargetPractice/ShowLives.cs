@@ -17,6 +17,8 @@ public class ShowLives : MonoBehaviour {
 	[SerializeField]
 	private GameObject scoreText, gameOverGroup, finalScoreText;
 
+	UiManager uiManager;
+
 	// Use this for initialization
 	void Start () {
 		lives = new List<GameObject> ();
@@ -24,6 +26,7 @@ public class ShowLives : MonoBehaviour {
 			GameObject life = Instantiate (lifePrefab, this.gameObject.transform);
 			lives.Add (life);
 		}
+
 	}
 	
 	public void looseLife() {
@@ -36,6 +39,8 @@ public class ShowLives : MonoBehaviour {
 			this.scoreText.SetActive (false);
 			this.gameOverGroup.SetActive (true);
 			this.finalScoreText.GetComponent<Text> ().text = "Your score was " + this.scoreText.GetComponent<ShowScore> ().getScore ();
+			uiManager = GameObject.Find("GameOverGroup").GetComponent<UiManager>();
+			uiManager.PauseGameFromDeath();
 		}
 	}
 }
