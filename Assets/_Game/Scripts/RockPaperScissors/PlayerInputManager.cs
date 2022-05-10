@@ -18,11 +18,13 @@ public class PlayerInputManager : MonoBehaviour
     internal void DisplayAIOptionImage(RPSGameController.AIOptions aiChoice)
     {
         aiSprite.sprite = Resources.Load<Sprite>(aiChoice.ToString());
+        aiSprite.color += new Color(0.0f, 0.0f, 0.0f, 1.0f);
     }
 
     internal void DisplayPlayerOptionImage(RPSGameController.Options playerChoice)
     {
         playerSprite.sprite = Resources.Load<Sprite>(playerChoice.ToString());
+        playerSprite.color += new Color(0.0f, 0.0f, 0.0f, 1.0f);
     }
 
     public void RockButton()
