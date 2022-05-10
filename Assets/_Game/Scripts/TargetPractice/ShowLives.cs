@@ -41,6 +41,8 @@ public class ShowLives : MonoBehaviour {
 			this.finalScoreText.GetComponent<Text> ().text = "Your score was " + this.scoreText.GetComponent<ShowScore> ().getScore ();
 			uiManager = GameObject.Find("GameOverGroup").GetComponent<UiManager>();
 			uiManager.PauseGameFromDeath();
+			GameObject pause = GameObject.Find("PauseButton");
+			pause.SetActive(false);
 		}
 	}
 }

@@ -12,9 +12,10 @@ public class ShowScore : MonoBehaviour {
 		GetComponent<Text> ().text = "Score: " + this.score;
 	}
 
-	public void incrementScore(int incrementValue) {
-		this.score += incrementValue;
-		GetComponent<Text> ().text = "Score: " + this.score;
+	public void incrementScore(int incrementValue) 
+	{
+			this.score += incrementValue;
+			GetComponent<Text>().text = "Score: " + this.score;
 	}
 
 	public int getScore() {

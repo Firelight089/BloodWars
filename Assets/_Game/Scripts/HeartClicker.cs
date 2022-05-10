@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class HeartClicker : MonoBehaviour
 {
-    public GameObject heartClicker;
+    //public GameObject heartClicker;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
 
-        anim = heartClicker.GetComponent<Animator>();
+        //anim = heartClicker.GetComponent<Animator>();
 
     }
 

@@ -10,7 +10,7 @@ public class UiManager : MonoBehaviour
 
     // Start is called before the first frame update
     public GameObject popUp;
-
+    
     void Start()
     {
         if (gameIsPaused == true)
@@ -45,11 +45,19 @@ public class UiManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             gameIsPaused = true;
+            ActivatePopUp();
+            GameObject spawn = GameObject.Find("Spawn Objects");
+            spawn.GetComponent<SpawnObjects>().enabled = false;
+            
         }
-        else
+        else if (gameIsPaused)
         {
             Time.timeScale = 1;
             gameIsPaused = false;
+            HidePopUp();
+            GameObject spawn = GameObject.Find("Spawn Objects");
+            spawn.GetComponent<SpawnObjects>().enabled = true;
+            
         }
     }
     public void PauseGameFromDeath()
