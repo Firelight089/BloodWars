@@ -203,7 +203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f4c61bb379889409926cbb280ce223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartClicker: {fileID: 0}
 --- !u!1 &131748276
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +523,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 2Profile
+          m_StringArgument: Construction
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &213747497
@@ -540,7 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16037738, g: 0.12028304, b: 0.12028304, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1715,7 +1714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1848799701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1865,7 +1864,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 3Inventory
+          m_StringArgument: RockPaperScissors
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1936892917

@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1428638992}
-  speed: 100
+  speed: 0.5
   textPosEnd: 1330
 --- !u!1 &1631350529
 GameObject:
