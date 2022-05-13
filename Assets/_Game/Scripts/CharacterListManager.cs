@@ -15,9 +15,12 @@ public class CharacterListManager : MonoBehaviour
     public Toggle windToggle;
     public Toggle magicToggle;
     public Toggle earthToggle;
+    public Text nOfUnits;
+    
 
     [SerializeField]
     public static Unit playerUnit;
+    int test = 1;
     
     // Start is called before the first frame update
     void Start()
@@ -63,7 +66,27 @@ public class CharacterListManager : MonoBehaviour
             filterList[i].gameObject.SetActive(true);
         }
 
-        //Debug.Log(filterList.Count);
+        //nOfUnits.text = filterList.Count + "/"+ characterList.Count;
+        GameObject go = GameObject.Find("InventorySlotholder");
+        //Debug.Log(go.GetComponent<RectTransform>().position.x);
+        Debug.Log(go.GetComponent<RectTransform>().anchoredPosition.x);
+        if (test > filterList.Count)
+            test = filterList.Count;
+        if (go.GetComponent<RectTransform>().anchoredPosition.x >= -220.0f)
+            test = 1;
+        if (go.GetComponent<RectTransform>().anchoredPosition.x <= -830.0f && go.GetComponent<RectTransform>().anchoredPosition.x <= -220.0f)
+        {
+            test = 2;
+        }
+        if (go.GetComponent<RectTransform>().anchoredPosition.x <= -1600.0f && go.GetComponent<RectTransform>().anchoredPosition.x <= -830.0f)
+            test = 3;
+        if (go.GetComponent<RectTransform>().anchoredPosition.x <= -2300.0f)
+            test = 4;
+        
+        nOfUnits.text = test.ToString() + "/"+ filterList.Count;
+       
+        
+        //Debug.Log(filterList.Count);        
     }
 
     public void SavePlayerInfo(Unit character)

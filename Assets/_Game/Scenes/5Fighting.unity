@@ -748,7 +748,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 45
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1377,7 +1377,7 @@ GameObject:
   - component: {fileID: 192528832}
   - component: {fileID: 192528831}
   m_Layer: 5
-  m_Name: +50HP
+  m_Name: -10DMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1397,7 +1397,7 @@ RectTransform:
   - {fileID: 967485373}
   - {fileID: 769881768}
   m_Father: {fileID: 1446448166}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1450,12 +1450,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 652737444}
         m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
-        m_MethodName: OnHealButton
+        m_MethodName: OnAttackButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2525,6 +2525,7 @@ RectTransform:
   - {fileID: 776005398}
   - {fileID: 1368766228}
   - {fileID: 578800492}
+  - {fileID: 1452485400}
   - {fileID: 1265459970}
   m_Father: {fileID: 2054245230}
   m_RootOrder: 3
@@ -2848,6 +2849,18 @@ MonoBehaviour:
       - m_Target: {fileID: 652737444}
         m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
         m_MethodName: ChallengeAccepted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1452485403}
+        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+        m_MethodName: ActivatePopUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4225,7 +4238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1703967128}
+      - m_Target: {fileID: 1446448169}
         m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: HidePopUp
         m_Mode: 1
@@ -4310,7 +4323,7 @@ RectTransform:
   - {fileID: 1071948912}
   - {fileID: 737857078}
   m_Father: {fileID: 1265459970}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7561,13 +7574,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 256463568}
-  - {fileID: 1452485400}
   - {fileID: 733801583}
   - {fileID: 1513252350}
   - {fileID: 1703967124}
   - {fileID: 1417495663}
   m_Father: {fileID: 373661333}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9014,7 +9026,7 @@ RectTransform:
   - {fileID: 289230248}
   - {fileID: 86934533}
   m_Father: {fileID: 1265459970}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9495,7 +9507,7 @@ GameObject:
   - component: {fileID: 1436213494}
   - component: {fileID: 1436213493}
   m_Layer: 5
-  m_Name: +100HP
+  m_Name: -20DMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9568,7 +9580,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 652737444}
         m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
-        m_MethodName: OnHealButton
+        m_MethodName: OnAttackButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9641,7 +9653,7 @@ GameObject:
   - component: {fileID: 1440165833}
   - component: {fileID: 1440165832}
   m_Layer: 5
-  m_Name: +5HP
+  m_Name: -15DMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9661,7 +9673,7 @@ RectTransform:
   - {fileID: 357156923}
   - {fileID: 1029912501}
   m_Father: {fileID: 1446448166}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9714,12 +9726,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 652737444}
         m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
-        m_MethodName: OnHealButton
+        m_MethodName: OnAttackButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9785,8 +9797,9 @@ GameObject:
   - component: {fileID: 1446448166}
   - component: {fileID: 1446448168}
   - component: {fileID: 1446448167}
+  - component: {fileID: 1446448169}
   m_Layer: 5
-  m_Name: AttackOptBG (1)
+  m_Name: AttackOptBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9803,9 +9816,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1440165831}
   - {fileID: 1928598412}
   - {fileID: 192528830}
+  - {fileID: 1440165831}
   - {fileID: 1436213492}
   - {fileID: 720848722}
   m_Father: {fileID: 1513252350}
@@ -9854,6 +9867,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446448165}
   m_CullTransparentMesh: 1
+--- !u!114 &1446448169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446448165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f670891e8bebaf1468abafff4cdc154d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUp: {fileID: 1446448165}
 --- !u!1 &1450303974
 GameObject:
   m_ObjectHideFlags: 0
@@ -9980,13 +10006,14 @@ GameObject:
   - component: {fileID: 1452485400}
   - component: {fileID: 1452485402}
   - component: {fileID: 1452485401}
+  - component: {fileID: 1452485403}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1452485400
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9994,18 +10021,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452485399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 83792605}
-  m_Father: {fileID: 1265459970}
-  m_RootOrder: 1
+  m_Father: {fileID: 373661333}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 231.97443}
-  m_SizeDelta: {x: 453.7, y: 111.9489}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -626.3, y: 111.9489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452485401
 MonoBehaviour:
@@ -10045,6 +10072,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452485399}
   m_CullTransparentMesh: 1
+--- !u!114 &1452485403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452485399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f670891e8bebaf1468abafff4cdc154d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUp: {fileID: 1452485399}
 --- !u!1 &1465470081
 GameObject:
   m_ObjectHideFlags: 0
@@ -10609,7 +10649,7 @@ RectTransform:
   - {fileID: 221105240}
   - {fileID: 1446448166}
   m_Father: {fileID: 1265459970}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10660,9 +10700,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 652737444}
-        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
-        m_MethodName: OnAttackButton
+      - m_Target: {fileID: 1446448169}
+        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+        m_MethodName: ActivatePopUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11545,7 +11585,7 @@ RectTransform:
   - {fileID: 1250498778}
   - {fileID: 1316932909}
   m_Father: {fileID: 1265459970}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12705,7 +12745,7 @@ GameObject:
   - component: {fileID: 1928598414}
   - component: {fileID: 1928598413}
   m_Layer: 5
-  m_Name: '+25HP '
+  m_Name: -5DMG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12725,7 +12765,7 @@ RectTransform:
   - {fileID: 1084234254}
   - {fileID: 1980551532}
   m_Father: {fileID: 1446448166}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12778,12 +12818,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 652737444}
         m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
-        m_MethodName: OnHealButton
+        m_MethodName: OnAttackButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

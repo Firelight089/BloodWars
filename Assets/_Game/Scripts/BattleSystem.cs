@@ -84,13 +84,34 @@ public class BattleSystem : MonoBehaviour
         PlayerTurn();
     }
 
-    IEnumerator PlayerAttack()
+    IEnumerator PlayerAttack(int id)
     {
+        if (id == 0)
+        {
+            enemyUnit.TakeDamage(-5);
+            dialogueText.text = playerUnit.damage + "5 Damage to enemy!";
+        }
+        if (id == 1)
+        {
+            enemyUnit.TakeDamage(-10);
+            dialogueText.text = playerUnit.damage + "10 Damage to enemy!";
+        }
+        if (id == 2)
+        {
+            enemyUnit.TakeDamage(-15);
+            dialogueText.text = playerUnit.damage + "15 Damage to enemy!";
+        }
+        if (id == 3)
+        {
+            enemyUnit.TakeDamage(-20);
+            dialogueText.text = playerUnit.damage + "20 Damage to enemy!";
+        }
+
         //Damage Enemy
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
-        dialogueText.text = "Success!";
+        //dialogueText.text = "Success!";
 
         yield return new WaitForSeconds(2f);
 
@@ -152,12 +173,12 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    public void OnAttackButton()
+    public void OnAttackButton(int id)
     {
         if (state != BattleState.PLAYERTURN)
             return;
 
-        StartCoroutine(PlayerAttack());
+        StartCoroutine(PlayerAttack(id));
     }
 
     IEnumerator PlayerHeal(int id)
@@ -165,25 +186,29 @@ public class BattleSystem : MonoBehaviour
         if (id == 0)
         {
             playerUnit.Heal(5);
+            dialogueText.text = "5 Health restored!";
         }
         if (id == 1)
         {
             playerUnit.Heal(25);
             playerHUD.SetCoins(-50);
+            dialogueText.text = "25 Health restored!";
         }
         if (id == 2)
         {
             playerUnit.Heal(50);
             playerHUD.SetCoins(-100);
+            dialogueText.text = "50 Health restored!";
         }
         if (id == 3)
         {
             playerUnit.Heal(100);
             playerHUD.SetCoins(-200);
+            dialogueText.text = "100 Health restored!";
         }
 
         playerHUD.SetHP(playerUnit.currentHP);
-        dialogueText.text = "Health restored!";
+        
 
         yield return new WaitForSeconds(2f);
 
