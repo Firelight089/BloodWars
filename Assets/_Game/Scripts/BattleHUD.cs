@@ -48,6 +48,7 @@ public class BattleHUD : MonoBehaviour
 
     public void SetCoins(int coins)
     {
-        unitCoinsText.text = "" + coins;
+        UnitName.unitNameInstance.GetUnit().coins -= coins;
+        unitCoinsText.text = "" + UnitName.unitNameInstance.GetUnit().coins.ToString();
     }
 }

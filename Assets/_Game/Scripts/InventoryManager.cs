@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class InventoryManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
             //inventory = new List<Equipment>();
         }
 
@@ -23,11 +25,41 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (GameObject.Find("CoinsValue") != null)
+        {
+            GameObject.Find("CoinsValue").GetComponent<Text>().text = ": " + UnitName.unitNameInstance.GetUnit().coins.ToString();
+        }
     }
 
     public void AddItemToInventory(Equipment item)
     {
         inventory.Add(item);
+    }
+
+    public void EmptyCart()
+    {
+        InventoryManager.Instance.inventory.Clear();
+    }
+
+    public void PurchaseItems()
+    {
+
+        GameObject itemsAdd = GameObject.Find("PurchaseSlotholder");
+        int totalCost = 0;
+        for(int i = 0; i < itemsAdd.transform.childCount; ++i)
+        {
+            totalCost += (int)itemsAdd.transform.GetChild(i).GetComponent<ShopSlot>().equipment.Cost;
+        }
+        GameObject go = GameObject.Find("PlayerNameInfo_NonDestructable");
+        if (go.GetComponent<UnitName>().GetUnit().coins >= totalCost)
+        {
+            for (int i = 0; i < itemsAdd.transform.childCount; ++i)
+            {
+            InventoryManager.Instance.AddItemToInventory(itemsAdd.transform.GetChild(i).GetComponent<ShopSlot>().equipment);
+            }
+            go.GetComponent<UnitName>().GetUnit().coins -= totalCost;
+            GameObject.Find("CoinsValue").GetComponent<Text>().text = ": " +go.GetComponent<UnitName>().GetUnit().coins.ToString();
+        }
+
     }
 }

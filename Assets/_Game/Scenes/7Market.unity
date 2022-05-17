@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopSlot (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1586943132758514828, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -179,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -219,12 +224,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -245,8 +250,7 @@ PrefabInstance:
         type: 3}
       propertyPath: equipment
       value: 
-      objectReference: {fileID: 11400000, guid: 9a3313ca61bb39f4a872e650915d2469,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd, type: 3}
 --- !u!224 &3346163 stripped
@@ -929,7 +933,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 59814875}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-        m_MethodName: DeactivateInventory
+        m_MethodName: EmptyCart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2832,9 +2836,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 59814875}
-        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-        m_MethodName: ActivateInventory
+      - m_Target: {fileID: 247376953}
+        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
+        m_MethodName: PurchaseItems
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4486,6 +4490,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopSlot
       objectReference: {fileID: 0}
+    - target: {fileID: 1586943132758514828, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4529,7 +4538,7 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -4569,12 +4578,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -4593,10 +4602,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5208619869602937029, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
+      propertyPath: shopSlot
+      value: 
+      objectReference: {fileID: 1586943132758514828, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+    - target: {fileID: 5208619869602937029, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
       propertyPath: equipment
       value: 
-      objectReference: {fileID: 11400000, guid: d0d8eb4d3cc07ac4eb0ca679ea2f869d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5208619869602937029, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd, type: 3}
 --- !u!224 &1224631126 stripped
@@ -5818,6 +5837,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopSlot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1586943132758514828, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5861,7 +5885,7 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -5901,12 +5925,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -415.00003
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -5927,8 +5951,7 @@ PrefabInstance:
         type: 3}
       propertyPath: equipment
       value: 
-      objectReference: {fileID: 11400000, guid: 34dfc72d64cc5d44b85057c87da23b1d,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd, type: 3}
 --- !u!224 &1628455689 stripped
@@ -7099,6 +7122,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopSlot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1586943132758514828, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7142,7 +7170,7 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -7182,12 +7210,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -415.00003
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -7208,8 +7236,7 @@ PrefabInstance:
         type: 3}
       propertyPath: equipment
       value: 
-      objectReference: {fileID: 11400000, guid: 7ba3f7b14f684ea4eaa8e27f20676196,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd, type: 3}
 --- !u!224 &1836784264 stripped
@@ -7814,6 +7841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopSlot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1586943132758514828, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7857,7 +7889,7 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -7897,12 +7929,12 @@ PrefabInstance:
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 1586943132758514829, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd,
         type: 3}
@@ -7923,8 +7955,7 @@ PrefabInstance:
         type: 3}
       propertyPath: equipment
       value: 
-      objectReference: {fileID: 11400000, guid: 727bcdebd40713a4c9a80bd31a729a09,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9027caf9a0b203f4ab5b49c6e3d0d2cd, type: 3}
 --- !u!224 &1930797141 stripped

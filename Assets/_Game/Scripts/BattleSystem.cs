@@ -191,19 +191,19 @@ public class BattleSystem : MonoBehaviour
         if (id == 1)
         {
             playerUnit.Heal(25);
-            playerHUD.SetCoins(-50);
+            playerHUD.SetCoins(50);
             dialogueText.text = "25 Health restored!";
         }
         if (id == 2)
         {
             playerUnit.Heal(50);
-            playerHUD.SetCoins(-100);
+            playerHUD.SetCoins(100);
             dialogueText.text = "50 Health restored!";
         }
         if (id == 3)
         {
             playerUnit.Heal(100);
-            playerHUD.SetCoins(-200);
+            playerHUD.SetCoins(200);
             dialogueText.text = "100 Health restored!";
         }
 

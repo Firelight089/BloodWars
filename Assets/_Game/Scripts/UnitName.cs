@@ -9,6 +9,7 @@ public class UnitName : MonoBehaviour
 
     public Text inputText;
     public static UnitName unitNameInstance;
+    Unit playerUnit;
 
     // Start is called before the first frame update
     void Awake()
@@ -44,6 +45,16 @@ public class UnitName : MonoBehaviour
             knightName = inputText.text;
             PlayerPrefs.SetString("name", knightName);
         }
+    }
+
+    public void SetUnit(Unit unit)
+    {
+        playerUnit = unit;
+    }
+
+    public Unit GetUnit()
+    {
+        return playerUnit;
     }
 
 }

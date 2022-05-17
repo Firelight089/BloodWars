@@ -7,6 +7,8 @@ public class ShopSlot : MonoBehaviour
 {
     public Image icon;
     public Equipment equipment;
+    bool mPurchased = false;
+    static int itemsSelected = 0;
 
     private void Start()
     {
@@ -15,14 +17,31 @@ public class ShopSlot : MonoBehaviour
 
     public void UpdateSlot(Equipment equip)
     {
-        equipment = equip;
-        icon.sprite = equipment.icon;
+        if (equip!= null)
+        {
+            equipment = equip;
+            icon.sprite = equipment.icon;
+        }
     }
 
     public void ShopSlotButtonPressed()
     {
-        InventoryManager.Instance.AddItemToInventory(equipment);
+        if (!mPurchased)
+        {
+            GameObject purchaseList = GameObject.Find("PurchaseSlotholder");
+            if (itemsSelected > 4)
+            {
+                Instantiate(Resources.Load<ShopSlot>("ShopSlot_One"), purchaseList.transform, false);
+                //itemsSelected = 0;
+            }
+            purchaseList.transform.GetChild(itemsSelected).gameObject.SetActive(true);
+            purchaseList.transform.GetChild(itemsSelected).GetComponent<ShopSlot>().UpdateSlot(equipment);
+            mPurchased = true;
+            itemsSelected++;
+        }
+
     }
 
+   
 
 }
