@@ -9,6 +9,9 @@ public class RPSGameController : MonoBehaviour
     private int playerScore = 0;
     private int aiScore = 0;
     private AIOptions aiChoice;
+    [SerializeField]
+    private GameObject scoreText, gameOverGroup, finalScoreText;
+    UiManager uiManager;
 
     public enum Options
     {
@@ -89,5 +92,18 @@ public class RPSGameController : MonoBehaviour
 
         playerInput.DisplayAIOptionImage(aiChoice);
         return aiChoice;
+    }
+    public void FinishTraining()
+    {
+        if (playerScore == 5 || aiScore == 5)
+        {
+            this.scoreText.SetActive(false);
+            this.gameOverGroup.SetActive(true);
+            this.finalScoreText.GetComponent<Text>().text = "Your score was " + this.scoreText.GetComponent<ShowScore>().getScore();
+            uiManager = GameObject.Find("GameOverGroup").GetComponent<UiManager>();
+            uiManager.PauseGameFromDeath();
+            GameObject pause = GameObject.Find("PauseButton");
+            pause.SetActive(false);
+        }
     }
 }

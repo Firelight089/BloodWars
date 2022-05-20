@@ -48,7 +48,7 @@ public class UiManager : MonoBehaviour
             ActivatePopUp();
             GameObject spawn = GameObject.Find("Spawn Objects");
             spawn.GetComponent<SpawnObjects>().enabled = false;
-            
+
         }
         else if (gameIsPaused)
         {
