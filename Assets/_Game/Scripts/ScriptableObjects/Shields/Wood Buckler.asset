@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Wooden Buckler
   type: 1
+  element: 0
   description: Basic wooden shilelds. Gives quick but weak protection on one-on-one
     battles
   icon: {fileID: 7586038000047475234, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
@@ -21,4 +22,4 @@ MonoBehaviour:
   DefensePoints: 12
   ExperiencePoints: 0
   HealthPoints: 0
-  Cost: 1.2
+  Cost: 40

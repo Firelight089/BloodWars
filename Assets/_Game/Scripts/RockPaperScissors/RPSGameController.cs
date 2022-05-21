@@ -9,10 +9,8 @@ public class RPSGameController : MonoBehaviour
     private int playerScore = 0;
     private int aiScore = 0;
     private AIOptions aiChoice;
-    [SerializeField]
-    private GameObject scoreText, gameOverGroup, finalScoreText;
-    UiManager uiManager;
 
+    ShowCoins showCoins;
     public enum Options
     {
         Rock,
@@ -27,6 +25,11 @@ public class RPSGameController : MonoBehaviour
         AiScissors
     }
 
+    private void Start()
+    {
+        showCoins = GameObject.Find("PlayerCoins").GetComponent<ShowCoins>();
+    }
+
     public void TryScore(Options type)
     {
 
@@ -39,10 +42,12 @@ public class RPSGameController : MonoBehaviour
             if (aiOption == AIOptions.AiRock)
             {
                 playerScore++;
+                showCoins.WinCoin();
             }
             else if (aiOption == AIOptions.AiScissors)
             {
                 aiScore++;
+                showCoins.LooseCoin();
             }
         }
 
@@ -51,10 +56,12 @@ public class RPSGameController : MonoBehaviour
             if (aiOption == AIOptions.AiScissors)
             {
                 playerScore++;
+                showCoins.WinCoin();
             }
             else if (aiOption == AIOptions.AiPaper)
             {
                 aiScore++;
+                showCoins.LooseCoin();
             }
         }
 
@@ -63,16 +70,17 @@ public class RPSGameController : MonoBehaviour
             if (aiOption == AIOptions.AiPaper)
             {
                 playerScore++;
+                showCoins.WinCoin();
             }
             else if (aiOption == AIOptions.AiRock)
             {
                 aiScore++;
+                showCoins.LooseCoin();
             }
         }
 
         playerInput.UpdateScore(playerScore, aiScore);
     }
-
     public AIOptions ChooseNewAIOptionType()
     {
         int randomValue = Random.Range(0, 3);
@@ -92,18 +100,5 @@ public class RPSGameController : MonoBehaviour
 
         playerInput.DisplayAIOptionImage(aiChoice);
         return aiChoice;
-    }
-    public void FinishTraining()
-    {
-        if (playerScore == 5 || aiScore == 5)
-        {
-            this.scoreText.SetActive(false);
-            this.gameOverGroup.SetActive(true);
-            this.finalScoreText.GetComponent<Text>().text = "Your score was " + this.scoreText.GetComponent<ShowScore>().getScore();
-            uiManager = GameObject.Find("GameOverGroup").GetComponent<UiManager>();
-            uiManager.PauseGameFromDeath();
-            GameObject pause = GameObject.Find("PauseButton");
-            pause.SetActive(false);
-        }
     }
 }

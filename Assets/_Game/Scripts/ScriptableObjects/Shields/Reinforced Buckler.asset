@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Reinforced Buckler
   type: 1
+  element: 0
   description: 'Provides stronger resistance to meele atacks and long-lasting protection. '
   icon: {fileID: 6400552702600982961, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
   AttackPoints: 100
   DefensePoints: 50
   ExperiencePoints: 5
   HealthPoints: 0
-  Cost: 5.4
+  Cost: 40

@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager Instance;
     public List<Equipment> inventory;
 
-    // Start is called before the first frame update
+        // Start is called before the first frame update
     void Start()
     {
         if (Instance == null)
@@ -39,6 +39,14 @@ public class InventoryManager : MonoBehaviour
     public void EmptyCart()
     {
         InventoryManager.Instance.inventory.Clear();
+        GameObject purchaseList = GameObject.Find("PurchaseSlotholder");
+        GameObject.Find("PurchaseValue").GetComponent<Text>().text = "0,000";
+        for (int i = 0; i < purchaseList.transform.childCount; ++i)
+        {
+            purchaseList.transform.GetChild(i).gameObject.SetActive(false);
+            purchaseList.transform.GetChild(i).GetComponent<ShopSlot>().UpdateSlot(null);
+            purchaseList.transform.GetChild(i).GetComponent<ShopSlot>().icon = null; // might be causing conflict
+        }
     }
 
     public void PurchaseItems()
@@ -48,7 +56,10 @@ public class InventoryManager : MonoBehaviour
         int totalCost = 0;
         for(int i = 0; i < itemsAdd.transform.childCount; ++i)
         {
-            totalCost += (int)itemsAdd.transform.GetChild(i).GetComponent<ShopSlot>().equipment.Cost;
+            if (itemsAdd.transform.GetChild(i).gameObject.activeInHierarchy == true)
+            {
+                totalCost += (int)itemsAdd.transform.GetChild(i).GetComponent<ShopSlot>().equipment.Cost;
+            }
         }
         GameObject go = GameObject.Find("PlayerNameInfo_NonDestructable");
         if (go.GetComponent<UnitName>().GetUnit().coins >= totalCost)
@@ -59,7 +70,7 @@ public class InventoryManager : MonoBehaviour
             }
             go.GetComponent<UnitName>().GetUnit().coins -= totalCost;
             GameObject.Find("CoinsValue").GetComponent<Text>().text = ": " +go.GetComponent<UnitName>().GetUnit().coins.ToString();
+            EmptyCart();
         }
-
     }
 }

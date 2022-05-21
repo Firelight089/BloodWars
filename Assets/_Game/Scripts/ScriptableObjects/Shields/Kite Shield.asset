@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Kite Shield
   type: 1
+  element: 0
   description: Triangle shaped shield with a sharp end for stabbing, provides less
     protection to the arm andchest
   icon: {fileID: 2622457356334492233, guid: 9be91dfc1663fde4e8cc5f792171e1a3, type: 3}
@@ -21,4 +22,4 @@ MonoBehaviour:
   DefensePoints: 30
   ExperiencePoints: 10
   HealthPoints: 0
-  Cost: 6
+  Cost: 40

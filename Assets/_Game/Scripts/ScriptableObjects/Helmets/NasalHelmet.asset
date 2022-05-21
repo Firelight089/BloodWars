@@ -22,4 +22,4 @@ MonoBehaviour:
   DefensePoints: 10
   ExperiencePoints: 10
   HealthPoints: 0
-  Cost: 1.2
+  Cost: 10

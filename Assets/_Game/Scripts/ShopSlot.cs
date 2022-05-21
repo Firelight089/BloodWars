@@ -36,12 +36,23 @@ public class ShopSlot : MonoBehaviour
             }
             purchaseList.transform.GetChild(itemsSelected).gameObject.SetActive(true);
             purchaseList.transform.GetChild(itemsSelected).GetComponent<ShopSlot>().UpdateSlot(equipment);
-            mPurchased = true;
+            purchaseList.transform.GetChild(itemsSelected).GetComponent<ShopSlot>().mPurchased = true;
             itemsSelected++;
         }
-
     }
 
-   
+    public void ItemsInCartCost()
+    {
+        GameObject itemsAdd = GameObject.Find("PurchaseSlotholder");
+        int totalCost = 0;
+        for (int i = 0; i < itemsAdd.transform.childCount; ++i)
+        {
+            if (itemsAdd.transform.GetChild(i).gameObject.activeInHierarchy == true)
+            {
+                totalCost += (int)itemsAdd.transform.GetChild(i).GetComponent<ShopSlot>().equipment.Cost;
+                GameObject.Find("PurchaseValue").GetComponent<Text>().text = "" + totalCost; // Needs to be shown before the purchase is completed.
+            }
+        }
+    }
 
 }

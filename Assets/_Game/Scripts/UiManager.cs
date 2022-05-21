@@ -13,10 +13,10 @@ public class UiManager : MonoBehaviour
     
     void Start()
     {
-        if (gameIsPaused == true)
-        {
-            PauseGame();
-        }
+        //if (gameIsPaused == true)
+        //{
+        //    PauseGame();
+        //}
     }
 
     // Update is called once per frame
@@ -60,6 +60,25 @@ public class UiManager : MonoBehaviour
             
         }
     }
+
+    public void PauseRockPaperScissors()
+    {
+        if (!gameIsPaused)
+        {
+            Time.timeScale = 0f;
+            gameIsPaused = true;
+            ActivatePopUp();
+
+        }
+        else if (gameIsPaused)
+        {
+            Time.timeScale = 1;
+            gameIsPaused = false;
+            HidePopUp();
+
+        }
+    }
+
     public void PauseGameFromDeath()
     {
         Time.timeScale = 0.0f;

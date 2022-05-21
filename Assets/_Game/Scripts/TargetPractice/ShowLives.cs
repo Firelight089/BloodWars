@@ -20,7 +20,8 @@ public class ShowLives : MonoBehaviour {
 	UiManager uiManager;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		lives = new List<GameObject> ();
 		for (int lifeIndex = 0; lifeIndex < this.numberOfLives; lifeIndex++) {
 			GameObject life = Instantiate (lifePrefab, this.gameObject.transform);

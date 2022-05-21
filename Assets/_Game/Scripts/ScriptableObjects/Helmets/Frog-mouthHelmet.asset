@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipmentName: Frog-mouth Helmet
   type: 0
+  element: 0
   description: Offers better protection from lances that splinter after impact with
     the rival's body armour.
   icon: {fileID: 3212975804712485589, guid: e7ddd38eddf0bb84a91cea70cdf8d41e, type: 3}
@@ -21,4 +22,4 @@ MonoBehaviour:
   DefensePoints: 250
   ExperiencePoints: 300
   HealthPoints: 0
-  Cost: 0
+  Cost: 10
