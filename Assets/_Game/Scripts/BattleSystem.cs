@@ -28,7 +28,10 @@ public class BattleSystem : MonoBehaviour
     public GameObject fightingArena;
     public GameObject challenge;
     public GameObject rematch;
+    public GameObject goHeal;
+
     public Text rematchText;
+    public Text healText;
 
     public Text dialogueText;
 
@@ -232,15 +235,26 @@ public class BattleSystem : MonoBehaviour
         {
             dialogueText.text = "Enemy defeated! ";
             fightingArena.SetActive(false);
-            rematch.SetActive(true);
-            rematchText.text = dialogueText.text + " Fight again?";
+            if (playerUnit.currentHP <= 0)
+            {
+                goHeal.SetActive(true);
+                healText.text = dialogueText.text + " You were badly hurt, Take some time to heal and try again";
+            }
+            else
+                rematch.SetActive(true);
+                rematchText.text = dialogueText.text + " Fight again?";
         }
         else if (state == BattleState.LOST)
         {
-            dialogueText.text = "You were defeated. ";
             fightingArena.SetActive(false);
-            rematch.SetActive(true);
-            rematchText.text = dialogueText.text + " Fight again?";
+            if (playerUnit.currentHP <= 0)
+            {
+                goHeal.SetActive(true);
+                healText.text = dialogueText.text + " You were badly hurt, Take some time to heal and try again";
+            }
+            else
+                rematch.SetActive(true);
+                rematchText.text = dialogueText.text + " Fight again?";
         }
     }
     public void Rematch()

@@ -44,8 +44,8 @@ public class InventoryManager : MonoBehaviour
         for (int i = 0; i < purchaseList.transform.childCount; ++i)
         {
             purchaseList.transform.GetChild(i).gameObject.SetActive(false);
-            purchaseList.transform.GetChild(i).GetComponent<ShopSlot>().UpdateSlot(null);
-            purchaseList.transform.GetChild(i).GetComponent<ShopSlot>().icon = null; // might be causing conflict
+            //purchaseList.transform.GetChild(i).GetComponent<ShopSlot>().UpdateSlot(null);
+            //purchaseList.transform.GetChild(i).GetComponent<ShopSlot>().icon = null;
         }
     }
 

@@ -50,7 +50,7 @@ public class ShopSlot : MonoBehaviour
             if (itemsAdd.transform.GetChild(i).gameObject.activeInHierarchy == true)
             {
                 totalCost += (int)itemsAdd.transform.GetChild(i).GetComponent<ShopSlot>().equipment.Cost;
-                GameObject.Find("PurchaseValue").GetComponent<Text>().text = "" + totalCost; // Needs to be shown before the purchase is completed.
+                GameObject.Find("PurchaseValue").GetComponent<Text>().text = "" + totalCost; 
             }
         }
     }
