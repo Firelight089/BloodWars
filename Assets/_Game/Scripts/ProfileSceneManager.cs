@@ -25,13 +25,24 @@ public class ProfileSceneManager : MonoBehaviour
         go.GetComponent<BattleHUD>().SetPlayerHUD(GameObject.Find("PlayerNameInfo_NonDestructable").GetComponent<UnitName>().GetUnit());//SetPlayerHUD(g.playerUnit);
     }
 
-    public void ChangeScene(string scene)
+    IEnumerator ChangeScene(string scene)
     {
+        yield return new WaitForSecondsRealtime(1.0f);
         SceneManager.LoadScene(scene);
     }
 
     void Start()
     {
         unitImage.sprite = character_image;
+    }
+
+    public void SceneChanger(string scene)
+    {
+        StartCoroutine("ChangeScene", scene);
+    }
+
+    public void ChangeSceneNoCooldown(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 }
