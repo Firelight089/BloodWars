@@ -7,9 +7,10 @@ using UnityEngine.UI;
 public class UiManager : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-
+    
     // Start is called before the first frame update
     public GameObject popUp;
+
     
     void Start()
     {
@@ -61,6 +62,16 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    public GameObject playButton;
+    public GameObject continueButton;
+    public bool playbuttonPressed = false;
+
+    public void PlayContinue()
+    {
+        playButton.SetActive(false);
+        continueButton.SetActive(true);
+    }
+
     public void PauseRockPaperScissors()
     {
         if (!gameIsPaused)
@@ -78,7 +89,6 @@ public class UiManager : MonoBehaviour
 
         }
     }
-
     public void PauseGameFromDeath()
     {
         Time.timeScale = 0.0f;

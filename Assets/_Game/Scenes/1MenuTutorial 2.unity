@@ -338,6 +338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 0}
+  playButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  playbuttonPressed: 0
 --- !u!4 &638634427
 Transform:
   m_ObjectHideFlags: 0
@@ -668,6 +671,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1355846533}
+  playButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  playbuttonPressed: 0
 --- !u!1 &1428638992
 GameObject:
   m_ObjectHideFlags: 0
