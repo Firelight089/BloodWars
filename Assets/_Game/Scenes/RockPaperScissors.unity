@@ -156,6 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 50691763}
+  playButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  playbuttonPressed: 0
 --- !u!114 &50691765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.2824707, y: 2.7650146}
+  m_AnchoredPosition: {x: -0.2824707, y: 2.7651367}
   m_SizeDelta: {x: -0.5649731, y: -5.530027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &127759685
@@ -1753,6 +1756,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1249635100}
+  playButton: {fileID: 0}
+  continueButton: {fileID: 0}
+  playbuttonPressed: 0
 --- !u!1 &1306575693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,7 +2765,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6761643969426052348, guid: f97f0ff0bca8de841b45a5f3a37c3d8c,
+  m_Sprite: {fileID: 6761643969426052348, guid: bd8059451126b59458f46c6fdeb55ea9,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
