@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 189498f4fa718554ca70a49e42b6d36f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1058346188706075202
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_0
+  - first:
+      213: 2651087963422986240
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_1
+  - first:
+      213: -6859333076036562469
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_2
+  - first:
+      213: -6398721924257176839
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_3
+  - first:
+      213: -2545316295425585133
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_4
+  - first:
+      213: -7439899082827142561
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_5
+  - first:
+      213: 6893747602070474781
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_6
+  - first:
+      213: -1644810342539684959
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_7
+  - first:
+      213: 7053983435670775552
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_8
+  - first:
+      213: 4491531076322133648
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_9
+  - first:
+      213: -5918791567340099870
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_10
+  - first:
+      213: 1940873652507209783
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_11
+  - first:
+      213: 8939575041436225420
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_12
+  - first:
+      213: -2923456221933231441
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_13
+  - first:
+      213: -2226987964525221289
+    second: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +120,360 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1156
+        width: 75
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242d633504000be00800000000000000
+      internalID: 1058346188706075202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1120
+        width: 145
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0001428e47e8ac420800000000000000
+      internalID: 2651087963422986240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1114
+        width: 207
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1d0ced8e0cec0a0800000000000000
+      internalID: -6859333076036562469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_3
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1065
+        width: 291
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2a520df4c2337a0800000000000000
+      internalID: -6398721924257176839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 765
+        width: 283
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3101522a0583dacd0800000000000000
+      internalID: -2545316295425585133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_5
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 783
+        width: 300
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a6553d33b20c890800000000000000
+      internalID: -7439899082827142561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_6
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 807
+        width: 211
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d109c906be28baf50800000000000000
+      internalID: 6893747602070474781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_7
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 840
+        width: 172
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3980245b57c29e0800000000000000
+      internalID: -1644810342539684959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 497
+        width: 164
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00765a6af88c4e160800000000000000
+      internalID: 7053983435670775552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_9
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 500
+        width: 210
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0960fcd77bf155e30800000000000000
+      internalID: 4491531076322133648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 488
+        width: 256
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6ad19bd6a3cdda0800000000000000
+      internalID: -5918791567340099870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_11
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 500
+        width: 266
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7307b93cd4e5fea10800000000000000
+      internalID: 1940873652507209783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 149
+        width: 341
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f01c3e220cf0c70800000000000000
+      internalID: 8939575041436225420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_13
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 145
+        width: 303
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2a3472e0ccd67d0800000000000000
+      internalID: -2923456221933231441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water-explosion-special-effect-fx-animation-frames-sprite-sheet-vortex-water-thunder-power-explosion-frames-flash-111242872_14
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 139
+        width: 339
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a676fce362811e0800000000000000
+      internalID: -2226987964525221289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

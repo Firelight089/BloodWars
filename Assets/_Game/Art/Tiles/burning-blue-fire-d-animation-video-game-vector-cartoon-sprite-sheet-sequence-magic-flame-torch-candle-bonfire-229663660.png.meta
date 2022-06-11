@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: f5961a970f0abab4480eebadfe855539
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5195565946557741394
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_0
+  - first:
+      213: 2505578185172242897
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_1
+  - first:
+      213: -6066276260195172043
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_2
+  - first:
+      213: -2538904340410396329
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_3
+  - first:
+      213: -4461833150703038481
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_4
+  - first:
+      213: 8317648148008870181
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_5
+  - first:
+      213: -319849611740511367
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_6
+  - first:
+      213: -4713667084228889840
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_7
+  - first:
+      213: 5751441536676133341
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_8
+  - first:
+      213: 8986514418041789077
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_9
+  - first:
+      213: 1318295789322080418
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_11
+  - first:
+      213: 5089095118268137767
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_17
+  - first:
+      213: 4849476944648376646
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_19
+  - first:
+      213: 6269909660099496624
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_20
+  - first:
+      213: 4709793793944433863
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_21
+  - first:
+      213: -6051745463283089723
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_22
+  - first:
+      213: 4962208397237293345
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_23
+  - first:
+      213: 1852099271058290865
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_24
+  - first:
+      213: -3753536882095861378
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_25
+  - first:
+      213: -6800570081848017007
+    second: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +101,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +135,381 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_0
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259b0bb73bb5a1840800000000000000
+      internalID: 5195565946557741394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1d824951a95c220800000000000000
+      internalID: 2505578185172242897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 342
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5318ea1c1e140dba0800000000000000
+      internalID: -6066276260195172043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_3
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751142f34fff3ccd0800000000000000
+      internalID: -2538904340410396329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_4
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef8845a3626412c0800000000000000
+      internalID: -4461833150703038481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_6
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97309a6097aaf8bf0800000000000000
+      internalID: -319849611740511367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013f51fc2c0b59eb0800000000000000
+      internalID: -4713667084228889840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 340
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9f10cea9931df40800000000000000
+      internalID: 5751441536676133341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 68
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a9e48204386bc70800000000000000
+      internalID: 8986514418041789077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_17
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 68
+        width: 107
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7210c800c0910a640800000000000000
+      internalID: 5089095118268137767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_19
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 67
+        width: 108
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6419638669dcc4340800000000000000
+      internalID: 4849476944648376646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_22
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 68
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cefded8091e30ca0800000000000000
+      internalID: -6051745463283089723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_23
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 68
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1211ac21f3e4dd440800000000000000
+      internalID: 4962208397237293345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_24
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 67
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b87034697af3b910800000000000000
+      internalID: 1852099271058290865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_25
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 68
+        width: 110
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e715953c712c8ebc0800000000000000
+      internalID: -3753536882095861378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning-blue-fire-d-animation-video-game-vector-cartoon-sprite-sheet-sequence-magic-flame-torch-candle-bonfire-229663660_26
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 68
+        width: 108
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fbc41aa858f91a0800000000000000
+      internalID: -6800570081848017007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8977c92f98be845a7c32fe39b1a6d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Fire Knight
+  unitName: Furia
   unitLevel: 25
   icon: {fileID: -5173689325396386409, guid: 672ced950ce0bc645835181fad39f93f, type: 3}
   Female: 1
