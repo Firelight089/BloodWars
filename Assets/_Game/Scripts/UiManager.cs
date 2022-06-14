@@ -28,6 +28,15 @@ public class UiManager : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+    IEnumerator ChangeSceneDelayed(string scene)
+    {
+        yield return new WaitForSecondsRealtime(1.0f);
+        SceneManager.LoadScene(scene);
+    }
+    public void SceneChanger(string scene)
+    {
+        StartCoroutine("ChangeSceneDelayed", scene);
+    }
     public void ActivatePopUp()
     {
         popUp.SetActive(true);
@@ -93,6 +102,5 @@ public class UiManager : MonoBehaviour
     {
         Time.timeScale = 0.0f;
     }
-
 }
 

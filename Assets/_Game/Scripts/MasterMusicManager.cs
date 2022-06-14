@@ -8,6 +8,7 @@ public class MasterMusicManager : MonoBehaviour
 
     void Awake()
     {
+
         if (instance)
         {
             Destroy(gameObject);

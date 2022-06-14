@@ -69,7 +69,7 @@ public class CharacterListManager : MonoBehaviour
         //nOfUnits.text = filterList.Count + "/"+ characterList.Count;
         GameObject go = GameObject.Find("InventorySlotholder");
         //Debug.Log(go.GetComponent<RectTransform>().position.x);
-        Debug.Log(go.GetComponent<RectTransform>().anchoredPosition.x);
+        //Debug.Log(go.GetComponent<RectTransform>().anchoredPosition.x);
         if (test > filterList.Count)
             test = filterList.Count;
         if (go.GetComponent<RectTransform>().anchoredPosition.x >= -220.0f)
