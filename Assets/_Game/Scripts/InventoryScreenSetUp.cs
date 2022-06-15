@@ -11,7 +11,7 @@ public class InventoryScreenSetUp : MonoBehaviour
     void Start()
     {
         characterImage.sprite = CharacterListManager.playerUnit.icon;
-        GameObject go = GameObject.Find("Player Stats");
+        GameObject go = GameObject.Find("Player HUD");
         go.GetComponent<BattleHUD>().SetPlayerHUD(CharacterListManager.playerUnit);
     }
 }

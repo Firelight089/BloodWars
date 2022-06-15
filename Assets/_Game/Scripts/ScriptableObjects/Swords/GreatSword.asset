@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
   m_Name: GreatSword
   m_EditorClassIdentifier: 
-  equipmentName: GreatSword
+  equipmentName: Bastard's Sword
   type: 3
   element: 1
   description: A long heavy  sword
-  icon: {fileID: 8289387723579576647, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
+  icon: {fileID: 21300000, guid: da3489a989b315644b2918cb9df15709, type: 3}
   AttackPoints: 120
   DefensePoints: 0
   ExperiencePoints: 20

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
   m_Name: Bandit Knife
   m_EditorClassIdentifier: 
-  equipmentName: Bandit's Knife
+  equipmentName: Spiked Mace
   type: 3
   element: 3
-  description: A knife of bandits
-  icon: {fileID: 6123003023063038561, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
+  description: Heavey metal mace with pearcing spiekes
+  icon: {fileID: 21300000, guid: eb979bdcd9c0bfa41811e478c6e2db73, type: 3}
   AttackPoints: 20
   DefensePoints: 0
   ExperiencePoints: 2

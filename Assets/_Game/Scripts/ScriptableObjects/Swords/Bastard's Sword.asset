@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
   m_Name: Bastard's Sword
   m_EditorClassIdentifier: 
-  equipmentName: Bastard's Sword
+  equipmentName: Priest Staff
   type: 3
   element: 4
-  description: A long heavy  sword
-  icon: {fileID: 1340437603416802206, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
+  description: Staff with magic healing emergy
+  icon: {fileID: 21300000, guid: 3fa53af4c50543b469421a6895537de8, type: 3}
   AttackPoints: 40
   DefensePoints: 0
   ExperiencePoints: 10

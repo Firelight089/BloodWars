@@ -17,7 +17,7 @@ public class CharacterUIAnimations : MonoBehaviour
     {
         if (swipeAnimDemo.GetCurrentAnimatorStateInfo(0).IsName("SwipeDemo"))
         {
-            if(!AnimatorIsPlaying())
+            if(!AnimatorIsPlaying(swipeAnimDemo))
             {
                 swipeAnimDemo.enabled = false;
             }
@@ -29,13 +29,17 @@ public class CharacterUIAnimations : MonoBehaviour
         swipeAnimDemo.SetTrigger("Clicked");
         
     }
-    bool AnimatorIsPlaying()
+    bool AnimatorIsPlaying(Animator anim)
     {
-        var animStateInfo = swipeAnimDemo.GetCurrentAnimatorStateInfo(0);
+        var animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
         float NTime = animStateInfo.normalizedTime;
         if (NTime > 1.0f)
             return false;
         else
             return true;
+    }
+    public void PlayGenderAnim()
+    {
+        tutorialAnimator.SetTrigger("Done");
     }
 }

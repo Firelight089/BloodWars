@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
   m_Name: LongSword 1
   m_EditorClassIdentifier: 
-  equipmentName: Long Sword
+  equipmentName: Wooden Bow
   type: 3
   element: 2
-  description: A long heavy  sword
-  icon: {fileID: 7441372264213655823, guid: 8343b3871f6a895489f547dc8b0f7469, type: 3}
+  description: A strong and good quality bow for better shots
+  icon: {fileID: 21300000, guid: f049b8f6e6c70664abce7e9de8fc5a5c, type: 3}
   AttackPoints: 80
   DefensePoints: 0
   ExperiencePoints: 15
