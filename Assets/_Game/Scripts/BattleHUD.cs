@@ -9,11 +9,17 @@ public class BattleHUD : MonoBehaviour
     public Text nameText;
     public Text leveltext;
     public Slider hpSlider;
+    public GameObject healthBarFull;
+    private Image hBaFuImg;
     public Text unitHealthText;
     public Text unitAttackText;
     public Text unitDefenseText;
     public Text unitCoinsText;
 
+    void Start()
+    {
+        hBaFuImg = healthBarFull.GetComponent<Image>();
+    }
     public void SetPlayerHUD(Unit unit)
     {
         nameText.text = GameObject.Find("PlayerNameInfo_NonDestructable").GetComponent<UnitName>().knightName;
@@ -51,4 +57,6 @@ public class BattleHUD : MonoBehaviour
         UnitName.unitNameInstance.GetUnit().coins -= coins;
         unitCoinsText.text = "" + UnitName.unitNameInstance.GetUnit().coins.ToString();
     }
+
+
 }

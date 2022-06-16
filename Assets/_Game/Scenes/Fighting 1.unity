@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7907712092a43924196b486e196d8c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBarFull: {fileID: 0}
+  healthBarFull: {fileID: 395253717}
   popup: {fileID: 369124542}
   damage: 0.1
 --- !u!4 &652737442

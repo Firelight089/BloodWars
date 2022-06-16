@@ -2194,7 +2194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0, y: 43}
+  m_AnchoredPosition: {x: 0, y: 42.999992}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &316726008
@@ -2422,7 +2422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &369124543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2524,7 +2524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &373661333
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3304,7 +3304,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3694,6 +3694,7 @@ MonoBehaviour:
   nameText: {fileID: 1306342530}
   leveltext: {fileID: 1053994335}
   hpSlider: {fileID: 330944475}
+  healthBarFull: {fileID: 0}
   unitHealthText: {fileID: 1029697139}
   unitAttackText: {fileID: 276218485}
   unitDefenseText: {fileID: 1220836154}
@@ -5727,7 +5728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 15.399, y: 10.73}
+  m_AnchoredPosition: {x: 15.399, y: 10.729996}
   m_SizeDelta: {x: 244.8, y: 252.46}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &882058293
@@ -5877,7 +5878,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7012,7 +7013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2, y: 44}
+  m_AnchoredPosition: {x: 2, y: 43.999992}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1171192067
@@ -7656,7 +7657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0013809204, y: 53}
+  m_AnchoredPosition: {x: -0.0013809204, y: 52.999992}
   m_SizeDelta: {x: 85, y: 55}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1271061268
@@ -7872,7 +7873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1316932909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8606,7 +8607,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8709,6 +8710,7 @@ MonoBehaviour:
   nameText: {fileID: 2132879867}
   leveltext: {fileID: 346559024}
   hpSlider: {fileID: 2131488793}
+  healthBarFull: {fileID: 0}
   unitHealthText: {fileID: 761423000}
   unitAttackText: {fileID: 38868031}
   unitDefenseText: {fileID: 2049328955}
@@ -11026,7 +11028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 231.39, y: 10.73}
+  m_AnchoredPosition: {x: 231.39, y: 10.729996}
   m_SizeDelta: {x: 550.41, y: 373.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519753155
@@ -11656,7 +11658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 53}
+  m_AnchoredPosition: {x: 0, y: 52.999992}
   m_SizeDelta: {x: 85, y: 55}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1697594432
@@ -12636,7 +12638,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
