@@ -92,25 +92,29 @@ public class BattleSystem : MonoBehaviour
         if (id == 0)
         {
             enemyUnit.TakeDamage(-5);
-            int totalDamage = playerUnit.damage + 5;
+            int damage = playerUnit.GetDamage();
+            int totalDamage = damage + 5;
             dialogueText.text = totalDamage + " Damage to enemy!";
         }
         if (id == 1)
         {
-            enemyUnit.TakeDamage(-10); 
-            int totalDamage = playerUnit.damage + 10;
+            enemyUnit.TakeDamage(-10);
+            int damage = playerUnit.GetDamage();
+            int totalDamage = damage + 10;
             dialogueText.text = totalDamage + " Damage to enemy!";
         }
         if (id == 2)
         {
-            enemyUnit.TakeDamage(-15); 
-            int totalDamage = playerUnit.damage + 15;
+            enemyUnit.TakeDamage(-15);
+            int damage = playerUnit.GetDamage();
+            int totalDamage = damage + 15;
             dialogueText.text = totalDamage + " Damage to enemy!";
         }
         if (id == 3)
         {
-            enemyUnit.TakeDamage(-20); 
-            int totalDamage = playerUnit.damage + 20;
+            enemyUnit.TakeDamage(-20);
+            int damage = playerUnit.GetDamage();
+            int totalDamage = damage + 20;
             dialogueText.text = totalDamage + " Damage to enemy!";
         }
 

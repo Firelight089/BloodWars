@@ -7,29 +7,21 @@ using UnityEngine.UI;
 public class DamageController : MonoBehaviour
 {
     public GameObject healthBarFull;
-    public GameObject popup;
-    public float damage = 0.1f;
-
-
     private Image hBaFuImg;
 
     // Start is called before the first frame update
     void Start()
     {
+        healthBarFull.transform.Find("HealthBarFull");
         hBaFuImg = healthBarFull.GetComponent<Image>();
+        hBaFuImg.fillAmount = (float)UnitName.unitNameInstance.GetUnit().currentHP / (float)UnitName.unitNameInstance.GetUnit().maxHP;
     }
 
     // Update is called once per frame
+
     void Update()
     {
-    }
-    public void Attack()
-    {
-        hBaFuImg.fillAmount -= damage;
-
-        if (hBaFuImg.fillAmount <= 0.1f)
-        {
-            popup.SetActive(true);
-        }
+      
+      
     }
 }

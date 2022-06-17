@@ -41,4 +41,9 @@ public class Unit : MonoBehaviour
         if (currentHP > maxHP)
             currentHP = maxHP;
     }
+
+    public int GetDamage()
+    {
+        return damage;
+    }
 }

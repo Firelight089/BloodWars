@@ -6,7 +6,7 @@ public class CharacterUIAnimations : MonoBehaviour
 {
     public Animator tutorialAnimator;
     public Animator swipeAnimDemo;
-
+    public Animator buttonTutorialsAnimator;
     // Start is called before the first frame update
     private void Start()
     {
@@ -24,11 +24,10 @@ public class CharacterUIAnimations : MonoBehaviour
         }
     }
     public void PlayAnim()
-    {
-        tutorialAnimator.SetTrigger("Clicked");
-        swipeAnimDemo.SetTrigger("Clicked");
-        
-    }
+        {
+            tutorialAnimator.SetTrigger("Clicked");
+            swipeAnimDemo.SetTrigger("Clicked");
+        }
     bool AnimatorIsPlaying(Animator anim)
     {
         var animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
@@ -42,4 +41,18 @@ public class CharacterUIAnimations : MonoBehaviour
     {
         tutorialAnimator.SetTrigger("Done");
     }
+    public void HandTransform()
+    {
+        GameObject go = GameObject.Find("ProfileButtonsHand");
+        go.transform.position = new Vector3(-105, -564, -1);
+    }
+    public void VaultButtonAnimator()
+    {
+        buttonTutorialsAnimator.SetTrigger("Clicked");
+    }
+    public void TrainButtonAnimator()
+    {
+        buttonTutorialsAnimator.SetTrigger("ok");
+    }
+
 }
