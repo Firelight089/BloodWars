@@ -11,7 +11,6 @@ public class ProfileSceneManager : MonoBehaviour
     Text character_name;
     [SerializeField]
     Sprite character_image;
-
     public Image unitImage;
 
         
@@ -23,7 +22,7 @@ public class ProfileSceneManager : MonoBehaviour
         CharacterListManager g = GameObject.Find("CharacterListManager").GetComponent<CharacterListManager>();
         GameObject go = GameObject.Find("Player HUD");
         go.GetComponent<BattleHUD>().SetPlayerHUD(GameObject.Find("PlayerNameInfo_NonDestructable").GetComponent<UnitName>().GetUnit());//SetPlayerHUD(g.playerUnit);
-        unitImage.sprite = character_image;
+        //unitImage.sprite = character_image;
     }
 
     IEnumerator ChangeScene(string scene)
@@ -34,7 +33,7 @@ public class ProfileSceneManager : MonoBehaviour
 
     void Start()
     {
-        //unitImage.sprite = character_image;
+        unitImage.sprite = character_image;       
     }
 
     public void SceneChanger(string scene)

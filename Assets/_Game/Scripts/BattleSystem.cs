@@ -119,6 +119,7 @@ public class BattleSystem : MonoBehaviour
         }
 
         //Damage Enemy
+        BattleBoost();
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
@@ -275,6 +276,7 @@ public class BattleSystem : MonoBehaviour
         Element enemyType;
         enemyType = enemyUnit.unitElement;
         enemyUnit.damage = enemyPrefab.GetComponent<Unit>().damage;
+        playerUnit.damage = playerPrefab.GetComponent<Unit>().damage;
         // Water enemy
         if (enemyUnit.unitElement == Element.WATER && playerUnit.unitElement == Element.WATER)
         {

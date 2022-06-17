@@ -999,7 +999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0021972656, y: -1335}
+  m_AnchoredPosition: {x: 0.0021972656, y: -1332}
   m_SizeDelta: {x: 700, y: 1374.7109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448009453
@@ -1035,42 +1035,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'This game was possible thanks to:
-
-
-    Teachers:
-
-
-    Marcel Casarini
-
-    Lisa
-    Smedman
-
-    Kayla Williamson
-
-    Richard Zampieri
-
-    Charles Cue
-
-
-    Students:
-
-
-    Pedro
-    Martins
-
-
-
-    ArtStation:
-
-    -JIANYI Han
-
-
-
-
-
-
-'
+  m_Text: "Game Design, Concept \n& UI/UX by:\n\nElena Buitrago\n\n\nSpecial thanks
+    to\n\n\nMarcel Casarini\nLisa Smedman\nKayla Williamson\nRichard Zampieri\nCharles
+    Cue\nPedro Martins\nDJ\n\n\n\nAssets from:\nUnity Market Place\n\nArt from:\nArtStation\nVarious
+    Existing Games\n\n\n\n\n\n"
 --- !u!222 &1448009454
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1194,7 +1162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -271}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1677164141

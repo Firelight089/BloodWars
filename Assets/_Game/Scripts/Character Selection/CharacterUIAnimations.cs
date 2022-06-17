@@ -54,5 +54,13 @@ public class CharacterUIAnimations : MonoBehaviour
     {
         buttonTutorialsAnimator.SetTrigger("ok");
     }
+    public void ExploreButtonAnimator()
+    {
+        buttonTutorialsAnimator.SetTrigger("movetoexplore");
+    }
+    public void MarketButtonAnimator()
+    {
+        buttonTutorialsAnimator.SetTrigger("movetomarket");
+    }
 
 }
