@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/RockPaperScissors.unity
     guid: 3444f70d58d8d27449b31c08ef1c3c1a
+  - enabled: 1
+    path: Assets/_Game/Scenes/Credits.unity
+    guid: 77155b0ca08ea354bb503eee5abc3c69
   m_configObjects: {}

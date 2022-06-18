@@ -1726,6 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1458377558}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -5262,6 +5263,7 @@ MonoBehaviour:
   tutorialAnimator: {fileID: 0}
   swipeAnimDemo: {fileID: 0}
   buttonTutorialsAnimator: {fileID: 897431100}
+  InventoryButtonsAnimator: {fileID: 0}
 --- !u!1 &912766682
 GameObject:
   m_ObjectHideFlags: 0
@@ -6092,6 +6094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1002518223}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -7360,7 +7363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 1195246610}
-  leveltext: {fileID: 0}
+  leveltext: {fileID: 912766684}
   hpSlider: {fileID: 1371407237}
   healthBarFull: {fileID: 0}
   unitHealthText: {fileID: 1383947443}
@@ -9639,7 +9642,7 @@ RectTransform:
   - {fileID: 2075599477}
   - {fileID: 1806036350}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9659,6 +9662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1458377558}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -10615,7 +10619,7 @@ RectTransform:
   - {fileID: 1146705206}
   - {fileID: 897431097}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11622,8 +11626,8 @@ RectTransform:
   - {fileID: 146204838}
   - {fileID: 339929057}
   - {fileID: 253052091}
-  - {fileID: 1458377559}
   - {fileID: 1777406953}
+  - {fileID: 1458377559}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

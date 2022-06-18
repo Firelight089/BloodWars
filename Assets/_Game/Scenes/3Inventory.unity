@@ -3388,7 +3388,7 @@ RectTransform:
   - {fileID: 1103349506}
   - {fileID: 600039446}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5162,6 +5162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 600039445}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -5590,6 +5591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 0}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -5980,6 +5982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 369124542}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -6434,7 +6437,7 @@ RectTransform:
   m_Children:
   - {fileID: 2013125451}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -7846,7 +7849,7 @@ RectTransform:
   - {fileID: 1232700485}
   - {fileID: 666141460}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -9044,6 +9047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1103349505}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -10292,6 +10296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 0}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -10423,7 +10428,7 @@ RectTransform:
   - {fileID: 1156231969}
   - {fileID: 1278593625}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10500,6 +10505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 0}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -12332,6 +12338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 0}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -13673,7 +13680,7 @@ RectTransform:
   - {fileID: 20044586}
   - {fileID: 303021476}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 11
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13693,6 +13700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1506232013}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -17644,6 +17652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1506232013}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -17785,7 +17794,7 @@ RectTransform:
   m_Children:
   - {fileID: 938179578}
   m_Father: {fileID: 2054245230}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18302,6 +18311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 2002408945}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -18764,12 +18774,12 @@ RectTransform:
   - {fileID: 2029633766}
   - {fileID: 591833625}
   - {fileID: 1898388439}
-  - {fileID: 1506232014}
   - {fileID: 1940838377}
   - {fileID: 859673606}
   - {fileID: 733801583}
   - {fileID: 1217740220}
   - {fileID: 369124546}
+  - {fileID: 1506232014}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18830,6 +18840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 2082379223}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0

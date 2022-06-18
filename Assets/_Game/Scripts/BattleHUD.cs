@@ -24,8 +24,9 @@ public class BattleHUD : MonoBehaviour
     {
         nameText.text = GameObject.Find("PlayerNameInfo_NonDestructable").GetComponent<UnitName>().knightName;
         leveltext.text = "" + unit.unitLevel;// CharacterListManager.playerUnit.unitLevel;//GameObject.Find("CharacterListManager").GetComponent<CharacterListManager>().playerUnit.unitLevel;
-        hpSlider.maxValue = unit.maxHP;
-        hpSlider.value = unit.currentHP;
+        //hBaFuImg.fillAmount = unit.maxHP;
+        //hpSlider.maxValue = unit.maxHP;
+        //hpSlider.value = unit.currentHP;
         unitHealthText.text = "" + unit.currentHP;
         unitAttackText.text = "" + unit.damage;
         unitDefenseText.text = "" + unit.experience;
