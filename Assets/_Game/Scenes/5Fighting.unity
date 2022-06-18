@@ -4162,6 +4162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 0}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -4583,6 +4584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 737857077}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -9273,6 +9275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1350624929}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -10036,6 +10039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1446448165}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -10244,6 +10248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1452485399}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0
@@ -11911,6 +11916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1316932908}
+  gameTutorial: {fileID: 0}
   playButton: {fileID: 0}
   continueButton: {fileID: 0}
   playbuttonPressed: 0

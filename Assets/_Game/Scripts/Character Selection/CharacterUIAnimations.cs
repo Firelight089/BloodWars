@@ -7,27 +7,29 @@ public class CharacterUIAnimations : MonoBehaviour
     public Animator tutorialAnimator;
     public Animator swipeAnimDemo;
     public Animator buttonTutorialsAnimator;
+    public Animator InventoryButtonsAnimator;
+
     // Start is called before the first frame update
     private void Start()
     {
-        
+
     }
 
     private void Update()
     {
         if (swipeAnimDemo.GetCurrentAnimatorStateInfo(0).IsName("SwipeDemo"))
         {
-            if(!AnimatorIsPlaying(swipeAnimDemo))
+            if (!AnimatorIsPlaying(swipeAnimDemo))
             {
                 swipeAnimDemo.enabled = false;
             }
         }
     }
     public void PlayAnim()
-        {
-            tutorialAnimator.SetTrigger("Clicked");
-            swipeAnimDemo.SetTrigger("Clicked");
-        }
+    {
+        tutorialAnimator.SetTrigger("Clicked");
+        swipeAnimDemo.SetTrigger("Clicked");
+    }
     bool AnimatorIsPlaying(Animator anim)
     {
         var animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
@@ -58,9 +60,17 @@ public class CharacterUIAnimations : MonoBehaviour
     {
         buttonTutorialsAnimator.SetTrigger("movetoexplore");
     }
+
     public void MarketButtonAnimator()
     {
         buttonTutorialsAnimator.SetTrigger("movetomarket");
     }
-
+    public void ItemsPickupAnimator()
+    {
+        InventoryButtonsAnimator.SetTrigger("items");
+    }
+    public void InventoriesCheckUp()
+    {
+        InventoryButtonsAnimator.SetTrigger("inventories");
+    }
 }

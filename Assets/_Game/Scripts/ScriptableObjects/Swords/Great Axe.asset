@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b971e26984fffeb48b172a814e34db68, type: 3}
-  m_Name: LongSword 1
+  m_Name: Great Axe
   m_EditorClassIdentifier: 
-  equipmentName: Wooden Bow
+  equipmentName: Great Axe
   type: 3
-  element: 2
-  description: A strong and good quality bow for better shots
-  icon: {fileID: 21300000, guid: f049b8f6e6c70664abce7e9de8fc5a5c, type: 3}
-  AttackPoints: 80
+  element: 0
+  description: A fire resistant Ax with a sharp blade.
+  icon: {fileID: 21300000, guid: 6a20f4dbf06be284e860c0bf6799923a, type: 3}
+  AttackPoints: 25
   DefensePoints: 0
-  ExperiencePoints: 15
+  ExperiencePoints: 3
   HealthPoints: 0
   Cost: 30

@@ -10,19 +10,26 @@ public class UiManager : MonoBehaviour
     
     // Start is called before the first frame update
     public GameObject popUp;
+    public GameObject gameTutorial;
 
-    
+    private void Awake()
+    {
+    }
     void Start()
     {
-        //if (gameIsPaused == true)
-        //{
-        //    PauseGame();
-        //}
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "TargetPractice")
+        {
+            if (gameIsPaused == false)
+            {
+                PauseGame();
+            }
+        }
     }
     public void ChangeScene(string scene)
     {
@@ -101,6 +108,14 @@ public class UiManager : MonoBehaviour
     public void PauseGameFromDeath()
     {
         Time.timeScale = 0.0f;
+    }
+    public void UnPauseGame()
+    {
+        Time.timeScale = 1;
+        gameIsPaused = false;
+        HidePopUp();
+        GameObject spawn = GameObject.Find("Spawn Objects");
+        spawn.GetComponent<SpawnObjects>().enabled = true;
     }
 }
 
